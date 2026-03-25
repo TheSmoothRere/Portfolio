@@ -1,4 +1,5 @@
 import {motion} from "motion/react";
+import profileImage from "@/assets/profile-picture.jpg";
 
 export default function About() {
     const container = {
@@ -82,7 +83,7 @@ export default function About() {
                             {/*  <br/>*/}
                             {/*  Put image in src/assets*/}
                             {/*</div>*/}
-                            <img src="src/assets/profile-picture.jpg" alt="Profile" className="object-cover w-full h-full"/>
+                            <img src={profileImage} alt="Profile" className="object-cover w-full h-full"/>
                         </div>
                     </motion.div>
                 </motion.div>
