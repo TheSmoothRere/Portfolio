@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+    /* Background Colors */
+    --color-obsidian: #0b1221;
+
+    /* Accent Colors */
+    --color-spring-green: #00ff9f;
+}
+
+body {
+    background-color: var(--color-obsidian);
+    color: white;
+
+    /* Subtle Grid Overlay */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e2a3b; /* Slightly lighter than obsidian */
+    border-radius: 5px;
+    border: 2px solid var(--color-obsidian);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2d3e54;
+}
+
+/* Utility class for the "Line Art" accent */
+.line-art-accent {
+    stroke: var(--color-spring-green);
+    color: var(--color-spring-green);
+}
