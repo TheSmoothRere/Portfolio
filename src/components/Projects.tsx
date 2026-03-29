@@ -18,7 +18,7 @@ const PROJECTS = [
         tech: ["Java", "Spring Boot", "PostgreSQL", "Redis", "JDA"],
         github: "https://github.com/TheSmoothRere/ReVoice-Bot",
         image: discordBotThumbnail,
-        demo: undefined
+        demo: "https://discord.com/oauth2/authorize?client_id=1477302506361979041"
     }
 ];
 
