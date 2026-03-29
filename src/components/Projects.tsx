@@ -1,6 +1,7 @@
 import {motion} from "motion/react";
 import {GithubLogoIcon, ArrowSquareOutIcon, FolderIcon} from "@phosphor-icons/react";
 import portfolioThumbnail from "@/assets/projects/portfolio-hero.png"
+import discordBotThumbnail from "@/assets/projects/discord-bot.png"
 
 const PROJECTS = [
     {
@@ -11,6 +12,14 @@ const PROJECTS = [
         image: portfolioThumbnail,
         demo: undefined
     },
+    {
+        title: "RéVoice Bot",
+        description: "A Discord bot that auto‑creates and cleans up temporary voice channels. It clones a trigger channel with all its settings and permissions, ensuring servers never run out of voice channels.",
+        tech: ["Java", "Spring Boot", "PostgreSQL", "Redis", "JDA"],
+        github: "https://github.com/TheSmoothRere/ReVoice-Bot",
+        image: discordBotThumbnail,
+        demo: undefined
+    }
 ];
 
 export default function Projects() {
