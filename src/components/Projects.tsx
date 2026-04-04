@@ -2,24 +2,36 @@ import {motion} from "motion/react";
 import {GithubLogoIcon, ArrowSquareOutIcon, FolderIcon} from "@phosphor-icons/react";
 import portfolioThumbnail from "@/assets/projects/portfolio-hero.png"
 import discordBotThumbnail from "@/assets/projects/discord-bot.png"
+import thesmoothrereWebThumbnail from "@/assets/projects/thesmoothrere-web.png"
 
 const PROJECTS = [
-    {
-        title: "Portfolio Website",
-        description: "The website you're looking at right now! Built with a modern frontend stack to showcase my skills and projects.",
-        tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
-        github: "https://github.com/TheSmoothRere",
-        image: portfolioThumbnail,
-        demo: undefined
-    },
-    {
-        title: "RéVoice Bot",
-        description: "A Discord bot that auto‑creates and cleans up temporary voice channels. It clones a trigger channel with all its settings and permissions, ensuring servers never run out of voice channels.",
-        tech: ["Java", "Spring Boot", "PostgreSQL", "Redis", "JDA"],
-        github: "https://github.com/TheSmoothRere/ReVoice-Bot",
-        image: discordBotThumbnail,
-        demo: "https://discord.com/oauth2/authorize?client_id=1477302506361979041"
-    }
+  {
+    title: "Portfolio Website",
+    description:
+      "The website you're looking at right now! Built with a modern frontend stack to showcase my skills and projects.",
+    tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/TheSmoothRere",
+    image: portfolioThumbnail,
+    demo: undefined,
+  },
+  {
+    title: "RéVoice Bot",
+    description:
+      "A Discord bot that auto‑creates and cleans up temporary voice channels. It clones a trigger channel with all its settings and permissions, ensuring servers never run out of voice channels.",
+    tech: ["Java", "Spring Boot", "PostgreSQL", "Redis", "JDA"],
+    github: "https://github.com/TheSmoothRere/ReVoice-Bot",
+    image: discordBotThumbnail,
+    demo: "https://discord.com/oauth2/authorize?client_id=1477302506361979041",
+  },
+  {
+    title: "TheSmoothRere Web",
+    description:
+      "Personal branding site and digital garden. Sharing thoughts through my blog and building custom solutions via open commissions.",
+    tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/TheSmoothRere/TheSmoothRere-Web",
+    image: thesmoothrereWebThumbnail,
+    demo: "https://thesmoothrere-web.thesmoothrere.workers.dev",
+  },
 ];
 
 export default function Projects() {
