@@ -27,7 +27,7 @@ const PROJECTS = [
     title: "TheSmoothRere Web",
     description:
       "Personal branding site and digital garden. Sharing thoughts through my blog and building custom solutions via open commissions.",
-    tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
     github: "https://github.com/TheSmoothRere/TheSmoothRere-Web",
     image: thesmoothrereWebThumbnail,
     demo: "https://thesmoothrere-web.thesmoothrere.workers.dev",
