@@ -1,23 +1,16 @@
-import Header from "@/components/Header.tsx";
-import Hero from "@/components/Hero.tsx";
-import About from "@/components/About.tsx";
-import Skills from "@/components/Skills.tsx";
-import Projects from "@/components/Projects.tsx";
-import Contact from "@/components/Contact.tsx";
-import Footer from "@/components/Footer.tsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Cv from "./pages/Cv";
 
 function App() {
-    return (
-        <>
-            <Header/>
-            <Hero/>
-            <About/>
-            <Skills/>
-            <Projects/>
-            <Contact/>
-            <Footer/>
-        </>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cv" element={<Cv />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
