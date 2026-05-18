@@ -1,0 +1,83 @@
+---
+const sections = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "contact", label: "Contact" },
+];
+const stepLabels = ["01", "02", "03", "04", "05"];
+---
+
+<nav class="fixed top-0 inset-x-0 z-40 transition-all duration-300" id="nav">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 h-16">
+    <a href="#" class="font-mono text-sm tracking-label-mono text-surface-tint hover:text-surface-tint transition-colors">
+      &lt;dev&gt;
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      {sections.map((s, i) => (
+        <a
+          href={`#${s.id}`}
+          class="font-mono text-xs tracking-label-caps uppercase text-on-surface-variant hover:text-surface-tint transition-colors duration-200 link-underline"
+        >
+          <span class="text-surface-tint">{stepLabels[i]}.</span> {s.label}
+        </a>
+      ))}
+    </div>
+    <a
+      href="#contact"
+      class="text-xs font-mono tracking-label-caps uppercase px-4 py-2 btn-outline rounded-none transition-all duration-200 hidden md:inline-block"
+    >
+      Hire Me
+    </a>
+    <button id="menu-toggle" class="md:hidden text-on-surface cursor-pointer" aria-label="Open menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 hidden">
+  {sections.map((s, i) => (
+    <a
+      href={`#${s.id}`}
+      class="font-mono text-xl tracking-label-caps uppercase text-on-surface hover:text-surface-tint transition-colors"
+    >
+      <span class="text-surface-tint">{stepLabels[i]}.</span> {s.label}
+    </a>
+  ))}
+  <a href="#contact" class="mt-4 text-sm font-mono tracking-label-caps uppercase px-6 py-3 btn-outline rounded-none">
+    Hire Me
+  </a>
+  <button id="menu-close" class="absolute top-6 right-6 text-on-surface cursor-pointer" aria-label="Close menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </svg>
+  </button>
+</div>
+
+<script>
+  const nav = document.getElementById("nav");
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuClose = document.getElementById("menu-close");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileLinks = mobileMenu?.querySelectorAll("a");
+
+  addEventListener("scroll", () => {
+    if (scrollY > 50) {
+      nav?.classList.add("bg-glass", "shadow-sm");
+      nav?.classList.remove("bg-transparent");
+    } else {
+      nav?.classList.remove("bg-glass", "shadow-sm");
+      nav?.classList.add("bg-transparent");
+    }
+  });
+
+  function openMenu() { mobileMenu?.classList.remove("hidden"); }
+  function closeMenu() { mobileMenu?.classList.add("hidden"); }
+
+  menuToggle?.addEventListener("click", openMenu);
+  menuClose?.addEventListener("click", closeMenu);
+  mobileLinks?.forEach((l) => l.addEventListener("click", closeMenu));
+</script>

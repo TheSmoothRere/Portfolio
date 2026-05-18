@@ -1,0 +1,42 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
+<section class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0 bg-grid opacity-40"></div>
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-surface-tint/3 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-surface to-transparent pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-20 w-full">
+    <div class="flex items-center gap-2 font-mono text-xs tracking-label-caps text-surface-tint mb-8">
+      <span class="w-2 h-2 rounded-full bg-surface-tint shadow-[0_0_8px] shadow-surface-tint/60"></span>
+      <span class="text-surface-tint">System ready</span>
+      <span class="text-outline mx-2">//</span>
+      <span class="text-on-surface-variant">v2.0.1</span>
+    </div>
+
+    <div class="max-w-4xl">
+      <h1 class="text-display-xl font-display font-bold tracking-display text-on-surface leading-[1.1] mb-4">
+        Full-Stack<br />
+        <span class="text-surface-tint">Developer</span> &amp;<br />
+        Architect
+      </h1>
+      <p class="text-lg text-on-surface-variant leading-relaxed max-w-xl mb-10 mt-6">
+        I design and build high-performance digital systems.
+        From pixel-perfect UIs to distributed backends — I engineer the full stack.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-4">
+      <a href="#projects" class="text-sm font-mono tracking-label-caps uppercase px-6 py-3 btn-outline rounded-none transition-all duration-200 flex items-center gap-2 group">
+        View Projects
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+          <path d="M7 17l9.2-9.2M17 17V7H7"/>
+        </svg>
+      </a>
+      <a href="#contact" class="text-sm font-mono tracking-label-caps uppercase px-6 py-3 text-on-surface hover:text-surface-tint transition-colors relative link-underline">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>

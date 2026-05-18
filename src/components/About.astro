@@ -1,0 +1,54 @@
+---
+import SectionLabel from "./SectionLabel.astro";
+---
+
+<section id="about" class="py-section-y">
+  <div class="max-w-6xl mx-auto px-6">
+    <SectionLabel number="01" label="About" class="mb-8" />
+
+    <div class="grid md:grid-cols-5 gap-12">
+      <div class="md:col-span-3">
+        <h2 class="text-display-lg font-display font-bold tracking-display text-on-surface leading-[1.1] mb-6">
+          Building the<br />
+          <span class="text-surface-tint">future</span>, one component<br />
+          at a time
+        </h2>
+        <div class="space-y-4 text-on-surface-variant leading-relaxed max-w-xl">
+          <p>
+            I'm a full-stack developer who thrives at the intersection of engineering precision and creative design.
+            With 5+ years of experience building production-grade applications, I specialize in crafting digital
+            experiences that feel both powerful and effortless.
+          </p>
+          <p>
+            My approach is rooted in systems thinking — I don't just write code, I architect solutions.
+            From distributed backends to pixel-perfect interfaces, every project gets the same obsessive attention to detail.
+          </p>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+          <span class="node"></span>
+          <div>
+            <div class="text-lg font-semibold text-on-surface">50+</div>
+            <div class="text-sm text-on-surface-variant font-mono tracking-label-mono">Projects Delivered</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+          <span class="node"></span>
+          <div>
+            <div class="text-lg font-semibold text-on-surface">8+</div>
+            <div class="text-sm text-on-surface-variant font-mono tracking-label-mono">Years Experience</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+          <span class="node"></span>
+          <div>
+            <div class="text-lg font-semibold text-on-surface">20+</div>
+            <div class="text-sm text-on-surface-variant font-mono tracking-label-mono">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
