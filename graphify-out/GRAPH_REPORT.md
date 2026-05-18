@@ -1,63 +1,68 @@
-# Graph Report - .  (2026-05-19)
+# Graph Report - Portfolio  (2026-05-19)
 
 ## Corpus Check
-- Corpus is ~1,462 words - fits in a single context window. You may not need a graph.
+- 3 files · ~1,470 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 80 nodes · 52 edges · 38 communities (8 shown, 30 thin omitted)
-- Extraction: 75% EXTRACTED · 25% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.74)
+- 102 nodes · 72 edges · 37 communities (9 shown, 28 thin omitted)
+- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `b725e4db`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Design System & Cyberpunk Aesthetic|Design System & Cyberpunk Aesthetic]]
-- [[_COMMUNITY_Full-Stack Development|Full-Stack Development]]
-- [[_COMMUNITY_Color Palette (Blue Tones)|Color Palette (Blue Tones)]]
-- [[_COMMUNITY_Typography (Hanken Grotesk)|Typography (Hanken Grotesk)]]
-- [[_COMMUNITY_Minecraft Mod Development|Minecraft Mod Development]]
-- [[_COMMUNITY_Color Palette (Green Tones)|Color Palette (Green Tones)]]
-- [[_COMMUNITY_Typography (Inter)|Typography (Inter)]]
-- [[_COMMUNITY_Typography (JetBrains Mono)|Typography (JetBrains Mono)]]
-- [[_COMMUNITY_Portfolio Branding|Portfolio Branding]]
-- [[_COMMUNITY_Surface Colors|Surface Colors]]
-- [[_COMMUNITY_Container Colors (Lowest)|Container Colors (Lowest)]]
-- [[_COMMUNITY_Container Colors (Low)|Container Colors (Low)]]
-- [[_COMMUNITY_Container Colors (Default)|Container Colors (Default)]]
-- [[_COMMUNITY_Container Colors (High)|Container Colors (High)]]
-- [[_COMMUNITY_Container Colors (Highest)|Container Colors (Highest)]]
-- [[_COMMUNITY_On-Surface Colors|On-Surface Colors]]
-- [[_COMMUNITY_On-Surface Variant Colors|On-Surface Variant Colors]]
-- [[_COMMUNITY_Primary Colors|Primary Colors]]
-- [[_COMMUNITY_On-Primary Colors|On-Primary Colors]]
-- [[_COMMUNITY_Secondary Colors|Secondary Colors]]
-- [[_COMMUNITY_Tertiary Colors|Tertiary Colors]]
-- [[_COMMUNITY_Error Colors|Error Colors]]
-- [[_COMMUNITY_Border Radius (Small)|Border Radius (Small)]]
-- [[_COMMUNITY_Border Radius (Default)|Border Radius (Default)]]
-- [[_COMMUNITY_Border Radius (Medium)|Border Radius (Medium)]]
-- [[_COMMUNITY_Border Radius (Large)|Border Radius (Large)]]
-- [[_COMMUNITY_Border Radius (Extra Large)|Border Radius (Extra Large)]]
-- [[_COMMUNITY_Border Radius (Full)|Border Radius (Full)]]
-- [[_COMMUNITY_Spacing (Unit)|Spacing (Unit)]]
-- [[_COMMUNITY_Spacing (Extra Small)|Spacing (Extra Small)]]
-- [[_COMMUNITY_Spacing (Small)|Spacing (Small)]]
-- [[_COMMUNITY_Spacing (Medium)|Spacing (Medium)]]
-- [[_COMMUNITY_Spacing (Large)|Spacing (Large)]]
-- [[_COMMUNITY_Spacing (Extra Large)|Spacing (Extra Large)]]
-- [[_COMMUNITY_Spacing (Double Extra Large)|Spacing (Double Extra Large)]]
-- [[_COMMUNITY_Spacing (Section Y)|Spacing (Section Y)]]
-- [[_COMMUNITY_Spacing (Gutter)|Spacing (Gutter)]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Minimalist Cyberpunk` - 25 edges
 2. `Full-Stack Web Developer` - 9 edges
-3. `Obsidian Blue` - 6 edges
-4. `Hanken Grotesk` - 5 edges
-5. `Spring Green` - 3 edges
-6. `Inter` - 3 edges
-7. `Minecraft Mod Developer` - 3 edges
-8. `Cyber-Minimalist Portfolio` - 2 edges
-9. `JetBrains Mono` - 2 edges
-10. `Raehan Damai Putra (TheSmoothRere)` - 2 edges
+3. `Components` - 6 edges
+4. `Obsidian Blue` - 6 edges
+5. `Raehan Damai Putra (TheSmoothRere)` - 5 edges
+6. `Hanken Grotesk` - 5 edges
+7. `🚀 Expertise` - 3 edges
+8. `Spring Green` - 3 edges
+9. `Inter` - 3 edges
+10. `Minecraft Mod Developer` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Gradient O1 (Blue to Light Blue)` --semantically_similar_to--> `Obsidian Blue`  [INFERRED] [semantically similar]
@@ -77,55 +82,57 @@
 - **Color Palette** — design_color-surface, design_color-surface-dim, design_color-surface-bright, design_color-surface-container-lowest, design_color-surface-container-low, design_color-surface-container, design_color-surface-container-high, design_color-surface-container-highest, design_color-on-surface, design_color-on-surface-variant, design_color-primary, design_color-on-primary, design_color-primary-container, design_color-secondary, design_color-tertiary, design_color-error, design_color-background [EXTRACTED 1.00]
 - **Full-Stack Technologies** — readme_react, readme_nextjs, readme_astro, readme_spring-boot, readme_postgresql, readme_redis, readme_docker, readme_linux [EXTRACTED 1.00]
 
-## Communities (38 total, 30 thin omitted)
+## Communities (37 total, 28 thin omitted)
 
-### Community 0 - "Design System & Cyberpunk Aesthetic"
-Cohesion: 0.12
-Nodes (17): Amber/Gold, Circuitry Metaphors, Dual-Mode Logic, Geometric Shapes, Glassmorphism, Luminance and Layers, Minimalist Cyberpunk, Neon Outline Button (+9 more)
+### Community 0 - "Community 0"
+Cohesion: 0.1
+Nodes (21): Amber/Gold, Circuitry Metaphors, Cyber-Minimalist Portfolio, Dual-Mode Logic, Geometric Shapes, Glassmorphism, JetBrains Mono, Luminance and Layers (+13 more)
 
-### Community 1 - "Full-Stack Development"
+### Community 1 - "Community 1"
+Cohesion: 0.15
+Nodes (12): Brand & Style, Buttons, Cards (Project/Schematic), Colors, Components, Elevation & Depth, Input Fields & Tags, Layout & Spacing (+4 more)
+
+### Community 2 - "Community 2"
+Cohesion: 0.15
+Nodes (13): 100,000+ downloads, Astro, Docker, Fabric, Full-Stack Web Developer, Linux, Minecraft Mod Developer, Next.js (+5 more)
+
+### Community 3 - "Community 3"
 Cohesion: 0.22
-Nodes (9): Astro, Docker, Full-Stack Web Developer, Linux, Next.js, PostgreSQL, React, Redis (+1 more)
+Nodes (8): 💼 Experience, 🚀 Expertise, **Freelance Developer** | _2022 – Present_, **Full-Stack Web Development**, 🌱 Journey, **Minecraft Mod Development**, Raehan Damai Putra (TheSmoothRere), 🛠️ Skills
 
-### Community 2 - "Color Palette (Blue Tones)"
+### Community 4 - "Community 4"
 Cohesion: 0.33
 Nodes (6): #051424, #051424, #051424, Obsidian Blue, Gradient O1 (Blue to Light Blue), Gradient O3 (Dark Blue to Light Blue)
 
-### Community 3 - "Typography (Hanken Grotesk)"
+### Community 5 - "Community 5"
 Cohesion: 0.4
 Nodes (5): Hanken Grotesk, Display LG (Hanken Grotesk), Display XL (Hanken Grotesk), Display XL Mobile (Hanken Grotesk), Headline MD (Hanken Grotesk)
 
-### Community 4 - "Minecraft Mod Development"
-Cohesion: 0.5
-Nodes (4): 100,000+ downloads, Fabric, Minecraft Mod Developer, Raehan Damai Putra (TheSmoothRere)
-
-### Community 5 - "Color Palette (Green Tones)"
-Cohesion: 0.67
-Nodes (3): #00ff9f, Spring Green, Gradient O2 (Light Blue to Cyan)
-
-### Community 6 - "Typography (Inter)"
+### Community 6 - "Community 6"
 Cohesion: 0.67
 Nodes (3): Inter, Body Base (Inter), Label Caps (Inter)
 
+### Community 7 - "Community 7"
+Cohesion: 0.67
+Nodes (3): #00ff9f, Spring Green, Gradient O2 (Light Blue to Cyan)
+
 ## Knowledge Gaps
-- **66 isolated node(s):** `esbuild`, `sharp`, `Obsidian Canvas`, `Circuitry Metaphors`, `Tactile Offsets` (+61 more)
+- **82 isolated node(s):** `Brand & Style`, `Colors`, `Typography`, `Layout & Spacing`, `Elevation & Depth` (+77 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Minimalist Cyberpunk` connect `Design System & Cyberpunk Aesthetic` to `Full-Stack Development`, `Color Palette (Blue Tones)`, `Typography (Hanken Grotesk)`, `Color Palette (Green Tones)`, `Typography (Inter)`, `Typography (JetBrains Mono)`, `Portfolio Branding`?**
-  _High betweenness centrality (0.362) - this node is a cross-community bridge._
-- **Why does `Full-Stack Web Developer` connect `Full-Stack Development` to `Minecraft Mod Development`?**
-  _High betweenness centrality (0.130) - this node is a cross-community bridge._
-- **Why does `Obsidian Blue` connect `Color Palette (Blue Tones)` to `Design System & Cyberpunk Aesthetic`?**
-  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+- **Why does `Minimalist Cyberpunk` connect `Community 0` to `Community 2`, `Community 4`, `Community 5`, `Community 6`, `Community 7`?**
+  _High betweenness centrality (0.221) - this node is a cross-community bridge._
+- **Why does `Obsidian Blue` connect `Community 4` to `Community 0`?**
+  _High betweenness centrality (0.047) - this node is a cross-community bridge._
 - **Are the 5 inferred relationships involving `Minimalist Cyberpunk` (e.g. with `esbuild` and `sharp`) actually correct?**
   _`Minimalist Cyberpunk` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `Obsidian Blue` (e.g. with `#051424` and `#051424`) actually correct?**
   _`Obsidian Blue` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 2 inferred relationships involving `Spring Green` (e.g. with `#00ff9f` and `Gradient O2 (Light Blue to Cyan)`) actually correct?**
-  _`Spring Green` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `esbuild`, `sharp`, `Obsidian Canvas` to the rest of the system?**
-  _66 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Brand & Style`, `Colors`, `Typography` to the rest of the system?**
+  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

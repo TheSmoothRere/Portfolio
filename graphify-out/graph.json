@@ -88,722 +88,1120 @@
       "source_file": "astro.config.mjs",
       "source_location": "L1",
       "id": "astro_config_mjs",
-      "community": 9,
+      "community": 8,
       "norm_label": "astro.config.mjs"
+    },
+    {
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L1",
+      "id": "design_md",
+      "community": 1,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Brand & Style",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L113",
+      "id": "portfolio_design_brand_style",
+      "community": 1,
+      "norm_label": "brand & style"
+    },
+    {
+      "label": "Colors",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L122",
+      "id": "portfolio_design_colors",
+      "community": 1,
+      "norm_label": "colors"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L135",
+      "id": "portfolio_design_typography",
+      "community": 1,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Layout & Spacing",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L143",
+      "id": "portfolio_design_layout_spacing",
+      "community": 1,
+      "norm_label": "layout & spacing"
+    },
+    {
+      "label": "Elevation & Depth",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L151",
+      "id": "portfolio_design_elevation_depth",
+      "community": 1,
+      "norm_label": "elevation & depth"
+    },
+    {
+      "label": "Shapes",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L159",
+      "id": "portfolio_design_shapes",
+      "community": 1,
+      "norm_label": "shapes"
+    },
+    {
+      "label": "Components",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L167",
+      "id": "portfolio_design_components",
+      "community": 1,
+      "norm_label": "components"
+    },
+    {
+      "label": "Buttons",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L169",
+      "id": "portfolio_design_buttons",
+      "community": 1,
+      "norm_label": "buttons"
+    },
+    {
+      "label": "Cards (Project/Schematic)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L173",
+      "id": "portfolio_design_cards_project_schematic",
+      "community": 1,
+      "norm_label": "cards (project/schematic)"
+    },
+    {
+      "label": "Input Fields & Tags",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L178",
+      "id": "portfolio_design_input_fields_tags",
+      "community": 1,
+      "norm_label": "input fields & tags"
+    },
+    {
+      "label": "Navigation",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L182",
+      "id": "portfolio_design_navigation",
+      "community": 1,
+      "norm_label": "navigation"
+    },
+    {
+      "label": "Skills Network",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L186",
+      "id": "portfolio_design_skills_network",
+      "community": 1,
+      "norm_label": "skills network"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Raehan Damai Putra (TheSmoothRere)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "community": 3,
+      "norm_label": "raehan damai putra (thesmoothrere)"
+    },
+    {
+      "label": "\ud83d\ude80 Expertise",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "id": "portfolio_readme_expertise",
+      "community": 3,
+      "norm_label": "\ud83d\ude80 expertise"
+    },
+    {
+      "label": "**Full-Stack Web Development**",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "id": "portfolio_readme_full_stack_web_development",
+      "community": 3,
+      "norm_label": "**full-stack web development**"
+    },
+    {
+      "label": "**Minecraft Mod Development**",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "id": "portfolio_readme_minecraft_mod_development",
+      "community": 3,
+      "norm_label": "**minecraft mod development**"
+    },
+    {
+      "label": "\ud83d\udcbc Experience",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "id": "portfolio_readme_experience",
+      "community": 3,
+      "norm_label": "\ud83d\udcbc experience"
+    },
+    {
+      "label": "**Freelance Developer** | _2022 \u2013 Present_",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "id": "portfolio_readme_freelance_developer_2022_present",
+      "community": 3,
+      "norm_label": "**freelance developer** | _2022 \u2013 present_"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f Skills",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "id": "portfolio_readme_skills",
+      "community": 3,
+      "norm_label": "\ud83d\udee0\ufe0f skills"
+    },
+    {
+      "label": "\ud83c\udf31 Journey",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "id": "portfolio_readme_journey",
+      "community": 3,
+      "norm_label": "\ud83c\udf31 journey"
     },
     {
       "label": "esbuild",
       "file_type": "code",
       "source_file": "pnpm-workspace.yaml",
       "source_location": 2,
-      "id": "pnpm-workspace_esbuild",
       "community": 0,
-      "norm_label": "esbuild"
+      "norm_label": "esbuild",
+      "id": "pnpm-workspace_esbuild"
     },
     {
       "label": "sharp",
       "file_type": "code",
       "source_file": "pnpm-workspace.yaml",
       "source_location": 3,
-      "id": "pnpm-workspace_sharp",
       "community": 0,
-      "norm_label": "sharp"
+      "norm_label": "sharp",
+      "id": "pnpm-workspace_sharp"
     },
     {
       "label": "Cyber-Minimalist Portfolio",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 2,
-      "id": "design_cyber-minimalist-portfolio",
-      "community": 8,
-      "norm_label": "cyber-minimalist portfolio"
+      "community": 0,
+      "norm_label": "cyber-minimalist portfolio",
+      "id": "design_cyber-minimalist-portfolio"
     },
     {
       "label": "Minimalist Cyberpunk",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 116,
-      "id": "design_minimalist-cyberpunk",
       "community": 0,
-      "norm_label": "minimalist cyberpunk"
+      "norm_label": "minimalist cyberpunk",
+      "id": "design_minimalist-cyberpunk"
     },
     {
       "label": "Obsidian Canvas",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 117,
-      "id": "design_obsidian-canvas",
       "community": 0,
-      "norm_label": "obsidian canvas"
+      "norm_label": "obsidian canvas",
+      "id": "design_obsidian-canvas"
     },
     {
       "label": "Circuitry Metaphors",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 118,
-      "id": "design_circuitry-metaphors",
       "community": 0,
-      "norm_label": "circuitry metaphors"
+      "norm_label": "circuitry metaphors",
+      "id": "design_circuitry-metaphors"
     },
     {
       "label": "Tactile Offsets",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 119,
-      "id": "design_tactile-offsets",
       "community": 0,
-      "norm_label": "tactile offsets"
+      "norm_label": "tactile offsets",
+      "id": "design_tactile-offsets"
     },
     {
       "label": "Dual-Mode Logic",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 120,
-      "id": "design_dual-mode-logic",
       "community": 0,
-      "norm_label": "dual-mode logic"
+      "norm_label": "dual-mode logic",
+      "id": "design_dual-mode-logic"
     },
     {
       "label": "Spring Green",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 125,
-      "id": "design_spring-green",
-      "community": 5,
-      "norm_label": "spring green"
+      "community": 7,
+      "norm_label": "spring green",
+      "id": "design_spring-green"
     },
     {
       "label": "Obsidian Blue",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 126,
-      "id": "design_obsidian-blue",
-      "community": 2,
-      "norm_label": "obsidian blue"
+      "community": 4,
+      "norm_label": "obsidian blue",
+      "id": "design_obsidian-blue"
     },
     {
       "label": "Amber/Gold",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 127,
-      "id": "design_amber-gold",
       "community": 0,
-      "norm_label": "amber/gold"
+      "norm_label": "amber/gold",
+      "id": "design_amber-gold"
     },
     {
       "label": "Slate/Gray",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 128,
-      "id": "design_slate-gray",
       "community": 0,
-      "norm_label": "slate/gray"
+      "norm_label": "slate/gray",
+      "id": "design_slate-gray"
     },
     {
       "label": "Hanken Grotesk",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 138,
-      "id": "design_hanken-grotesk",
-      "community": 3,
-      "norm_label": "hanken grotesk"
+      "community": 5,
+      "norm_label": "hanken grotesk",
+      "id": "design_hanken-grotesk"
     },
     {
       "label": "Inter",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 139,
-      "id": "design_inter",
       "community": 6,
-      "norm_label": "inter"
+      "norm_label": "inter",
+      "id": "design_inter"
     },
     {
       "label": "JetBrains Mono",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 140,
-      "id": "design_jetbrains-mono",
-      "community": 7,
-      "norm_label": "jetbrains mono"
+      "community": 0,
+      "norm_label": "jetbrains mono",
+      "id": "design_jetbrains-mono"
     },
     {
       "label": "Spine and Node",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 144,
-      "id": "design_spine-and-node",
       "community": 0,
-      "norm_label": "spine and node"
+      "norm_label": "spine and node",
+      "id": "design_spine-and-node"
     },
     {
       "label": "Luminance and Layers",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 152,
-      "id": "design_luminance-layers",
       "community": 0,
-      "norm_label": "luminance and layers"
+      "norm_label": "luminance and layers",
+      "id": "design_luminance-layers"
     },
     {
       "label": "Glassmorphism",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 155,
-      "id": "design_glassmorphism",
       "community": 0,
-      "norm_label": "glassmorphism"
+      "norm_label": "glassmorphism",
+      "id": "design_glassmorphism"
     },
     {
       "label": "Geometric Shapes",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 160,
-      "id": "design_geometric-shapes",
       "community": 0,
-      "norm_label": "geometric shapes"
+      "norm_label": "geometric shapes",
+      "id": "design_geometric-shapes"
     },
     {
       "label": "Neon Outline Button",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 170,
-      "id": "design_neon-outline-button",
       "community": 0,
-      "norm_label": "neon outline button"
+      "norm_label": "neon outline button",
+      "id": "design_neon-outline-button"
     },
     {
       "label": "Print Pill",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 171,
-      "id": "design_print-pill",
       "community": 0,
-      "norm_label": "print pill"
+      "norm_label": "print pill",
+      "id": "design_print-pill"
     },
     {
       "label": "Project/Schematic Card",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 173,
-      "id": "design_project-schematic-card",
       "community": 0,
-      "norm_label": "project/schematic card"
+      "norm_label": "project/schematic card",
+      "id": "design_project-schematic-card"
     },
     {
       "label": "Skills Network",
       "file_type": "rationale",
       "source_file": "DESIGN.md",
       "source_location": 186,
-      "id": "design_skills-network",
       "community": 0,
-      "norm_label": "skills network"
+      "norm_label": "skills network",
+      "id": "design_skills-network"
     },
     {
       "label": "#051424",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 4,
-      "id": "design_color-surface",
-      "community": 2,
-      "norm_label": "#051424"
+      "community": 4,
+      "norm_label": "#051424",
+      "id": "design_color-surface"
     },
     {
       "label": "#051424",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 5,
-      "id": "design_color-surface-dim",
-      "community": 2,
-      "norm_label": "#051424"
+      "community": 4,
+      "norm_label": "#051424",
+      "id": "design_color-surface-dim"
     },
     {
       "label": "#2c3a4c",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 6,
-      "id": "design_color-surface-bright",
-      "community": 10,
-      "norm_label": "#2c3a4c"
+      "community": 9,
+      "norm_label": "#2c3a4c",
+      "id": "design_color-surface-bright"
     },
     {
       "label": "#010f1f",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 7,
-      "id": "design_color-surface-container-lowest",
-      "community": 11,
-      "norm_label": "#010f1f"
+      "community": 10,
+      "norm_label": "#010f1f",
+      "id": "design_color-surface-container-lowest"
     },
     {
       "label": "#0d1c2d",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 8,
-      "id": "design_color-surface-container-low",
-      "community": 12,
-      "norm_label": "#0d1c2d"
+      "community": 11,
+      "norm_label": "#0d1c2d",
+      "id": "design_color-surface-container-low"
     },
     {
       "label": "#122131",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 9,
-      "id": "design_color-surface-container",
-      "community": 13,
-      "norm_label": "#122131"
+      "community": 12,
+      "norm_label": "#122131",
+      "id": "design_color-surface-container"
     },
     {
       "label": "#1c2b3c",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 10,
-      "id": "design_color-surface-container-high",
-      "community": 14,
-      "norm_label": "#1c2b3c"
+      "community": 13,
+      "norm_label": "#1c2b3c",
+      "id": "design_color-surface-container-high"
     },
     {
       "label": "#273647",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 11,
-      "id": "design_color-surface-container-highest",
-      "community": 15,
-      "norm_label": "#273647"
+      "community": 14,
+      "norm_label": "#273647",
+      "id": "design_color-surface-container-highest"
     },
     {
       "label": "#d4e4fa",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 12,
-      "id": "design_color-on-surface",
-      "community": 16,
-      "norm_label": "#d4e4fa"
+      "community": 15,
+      "norm_label": "#d4e4fa",
+      "id": "design_color-on-surface"
     },
     {
       "label": "#b9cbbc",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 13,
-      "id": "design_color-on-surface-variant",
-      "community": 17,
-      "norm_label": "#b9cbbc"
+      "community": 16,
+      "norm_label": "#b9cbbc",
+      "id": "design_color-on-surface-variant"
     },
     {
       "label": "#f4fff4",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 19,
-      "id": "design_color-primary",
-      "community": 18,
-      "norm_label": "#f4fff4"
+      "community": 17,
+      "norm_label": "#f4fff4",
+      "id": "design_color-primary"
     },
     {
       "label": "#00391f",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 20,
-      "id": "design_color-on-primary",
-      "community": 19,
-      "norm_label": "#00391f"
+      "community": 18,
+      "norm_label": "#00391f",
+      "id": "design_color-on-primary"
     },
     {
       "label": "#00ff9f",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 21,
-      "id": "design_color-primary-container",
-      "community": 5,
-      "norm_label": "#00ff9f"
+      "community": 7,
+      "norm_label": "#00ff9f",
+      "id": "design_color-primary-container"
     },
     {
       "label": "#c0c6db",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 24,
-      "id": "design_color-secondary",
-      "community": 20,
-      "norm_label": "#c0c6db"
+      "community": 19,
+      "norm_label": "#c0c6db",
+      "id": "design_color-secondary"
     },
     {
       "label": "#fffbff",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 28,
-      "id": "design_color-tertiary",
-      "community": 21,
-      "norm_label": "#fffbff"
+      "community": 20,
+      "norm_label": "#fffbff",
+      "id": "design_color-tertiary"
     },
     {
       "label": "#ffb4ab",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 32,
-      "id": "design_color-error",
-      "community": 22,
-      "norm_label": "#ffb4ab"
+      "community": 21,
+      "norm_label": "#ffb4ab",
+      "id": "design_color-error"
     },
     {
       "label": "#051424",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 48,
-      "id": "design_color-background",
-      "community": 2,
-      "norm_label": "#051424"
+      "community": 4,
+      "norm_label": "#051424",
+      "id": "design_color-background"
     },
     {
       "label": "Display XL (Hanken Grotesk)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 52,
-      "id": "design_typography-display-xl",
-      "community": 3,
-      "norm_label": "display xl (hanken grotesk)"
+      "community": 5,
+      "norm_label": "display xl (hanken grotesk)",
+      "id": "design_typography-display-xl"
     },
     {
       "label": "Display XL Mobile (Hanken Grotesk)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 58,
-      "id": "design_typography-display-xl-mobile",
-      "community": 3,
-      "norm_label": "display xl mobile (hanken grotesk)"
+      "community": 5,
+      "norm_label": "display xl mobile (hanken grotesk)",
+      "id": "design_typography-display-xl-mobile"
     },
     {
       "label": "Display LG (Hanken Grotesk)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 64,
-      "id": "design_typography-display-lg",
-      "community": 3,
-      "norm_label": "display lg (hanken grotesk)"
+      "community": 5,
+      "norm_label": "display lg (hanken grotesk)",
+      "id": "design_typography-display-lg"
     },
     {
       "label": "Headline MD (Hanken Grotesk)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 70,
-      "id": "design_typography-headline-md",
-      "community": 3,
-      "norm_label": "headline md (hanken grotesk)"
+      "community": 5,
+      "norm_label": "headline md (hanken grotesk)",
+      "id": "design_typography-headline-md"
     },
     {
       "label": "Body Base (Inter)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 76,
-      "id": "design_typography-body-base",
       "community": 6,
-      "norm_label": "body base (inter)"
+      "norm_label": "body base (inter)",
+      "id": "design_typography-body-base"
     },
     {
       "label": "Label Mono (JetBrains Mono)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 82,
-      "id": "design_typography-label-mono",
-      "community": 7,
-      "norm_label": "label mono (jetbrains mono)"
+      "community": 0,
+      "norm_label": "label mono (jetbrains mono)",
+      "id": "design_typography-label-mono"
     },
     {
       "label": "Label Caps (Inter)",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 88,
-      "id": "design_typography-label-caps",
       "community": 6,
-      "norm_label": "label caps (inter)"
+      "norm_label": "label caps (inter)",
+      "id": "design_typography-label-caps"
     },
     {
       "label": "0.25rem",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 95,
-      "id": "design_rounded-sm",
-      "community": 23,
-      "norm_label": "0.25rem"
+      "community": 22,
+      "norm_label": "0.25rem",
+      "id": "design_rounded-sm"
     },
     {
       "label": "0.5rem",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 96,
-      "id": "design_rounded-default",
-      "community": 24,
-      "norm_label": "0.5rem"
+      "community": 23,
+      "norm_label": "0.5rem",
+      "id": "design_rounded-default"
     },
     {
       "label": "0.75rem",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 97,
-      "id": "design_rounded-md",
-      "community": 25,
-      "norm_label": "0.75rem"
+      "community": 24,
+      "norm_label": "0.75rem",
+      "id": "design_rounded-md"
     },
     {
       "label": "1rem",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 98,
-      "id": "design_rounded-lg",
-      "community": 26,
-      "norm_label": "1rem"
+      "community": 25,
+      "norm_label": "1rem",
+      "id": "design_rounded-lg"
     },
     {
       "label": "1.5rem",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 99,
-      "id": "design_rounded-xl",
-      "community": 27,
-      "norm_label": "1.5rem"
+      "community": 26,
+      "norm_label": "1.5rem",
+      "id": "design_rounded-xl"
     },
     {
       "label": "9999px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 100,
-      "id": "design_rounded-full",
-      "community": 28,
-      "norm_label": "9999px"
+      "community": 27,
+      "norm_label": "9999px",
+      "id": "design_rounded-full"
     },
     {
       "label": "4px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 102,
-      "id": "design_spacing-unit",
-      "community": 29,
-      "norm_label": "4px"
+      "community": 28,
+      "norm_label": "4px",
+      "id": "design_spacing-unit"
     },
     {
       "label": "4px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 103,
-      "id": "design_spacing-xs",
-      "community": 30,
-      "norm_label": "4px"
+      "community": 29,
+      "norm_label": "4px",
+      "id": "design_spacing-xs"
     },
     {
       "label": "8px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 104,
-      "id": "design_spacing-sm",
-      "community": 31,
-      "norm_label": "8px"
+      "community": 30,
+      "norm_label": "8px",
+      "id": "design_spacing-sm"
     },
     {
       "label": "16px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 105,
-      "id": "design_spacing-md",
-      "community": 32,
-      "norm_label": "16px"
+      "community": 31,
+      "norm_label": "16px",
+      "id": "design_spacing-md"
     },
     {
       "label": "24px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 106,
-      "id": "design_spacing-lg",
-      "community": 33,
-      "norm_label": "24px"
+      "community": 32,
+      "norm_label": "24px",
+      "id": "design_spacing-lg"
     },
     {
       "label": "32px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 107,
-      "id": "design_spacing-xl",
-      "community": 34,
-      "norm_label": "32px"
+      "community": 33,
+      "norm_label": "32px",
+      "id": "design_spacing-xl"
     },
     {
       "label": "48px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 108,
-      "id": "design_spacing-xxl",
-      "community": 35,
-      "norm_label": "48px"
+      "community": 34,
+      "norm_label": "48px",
+      "id": "design_spacing-xxl"
     },
     {
       "label": "96px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 109,
-      "id": "design_spacing-section-y",
-      "community": 36,
-      "norm_label": "96px"
+      "community": 35,
+      "norm_label": "96px",
+      "id": "design_spacing-section-y"
     },
     {
       "label": "24px",
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 110,
-      "id": "design_spacing-gutter",
-      "community": 37,
-      "norm_label": "24px"
+      "community": 36,
+      "norm_label": "24px",
+      "id": "design_spacing-gutter"
     },
     {
       "label": "Raehan Damai Putra (TheSmoothRere)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 1,
-      "id": "readme_raehan-damai-putra",
-      "community": 4,
-      "norm_label": "raehan damai putra (thesmoothrere)"
+      "community": 2,
+      "norm_label": "raehan damai putra (thesmoothrere)",
+      "id": "readme_raehan-damai-putra"
     },
     {
       "label": "Full-Stack Web Developer",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 3,
-      "id": "readme_full-stack-web-developer",
-      "community": 1,
-      "norm_label": "full-stack web developer"
+      "community": 2,
+      "norm_label": "full-stack web developer",
+      "id": "readme_full-stack-web-developer"
     },
     {
       "label": "Minecraft Mod Developer",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 3,
-      "id": "readme_minecraft-mod-developer",
-      "community": 4,
-      "norm_label": "minecraft mod developer"
+      "community": 2,
+      "norm_label": "minecraft mod developer",
+      "id": "readme_minecraft-mod-developer"
     },
     {
       "label": "React",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 12,
-      "id": "readme_react",
-      "community": 1,
-      "norm_label": "react"
+      "community": 2,
+      "norm_label": "react",
+      "id": "readme_react"
     },
     {
       "label": "Next.js",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 12,
-      "id": "readme_nextjs",
-      "community": 1,
-      "norm_label": "next.js"
+      "community": 2,
+      "norm_label": "next.js",
+      "id": "readme_nextjs"
     },
     {
       "label": "Astro",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 12,
-      "id": "readme_astro",
-      "community": 1,
-      "norm_label": "astro"
+      "community": 2,
+      "norm_label": "astro",
+      "id": "readme_astro"
     },
     {
       "label": "Spring Boot",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 13,
-      "id": "readme_spring-boot",
-      "community": 1,
-      "norm_label": "spring boot"
+      "community": 2,
+      "norm_label": "spring boot",
+      "id": "readme_spring-boot"
     },
     {
       "label": "PostgreSQL",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 14,
-      "id": "readme_postgresql",
-      "community": 1,
-      "norm_label": "postgresql"
+      "community": 2,
+      "norm_label": "postgresql",
+      "id": "readme_postgresql"
     },
     {
       "label": "Redis",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 14,
-      "id": "readme_redis",
-      "community": 1,
-      "norm_label": "redis"
+      "community": 2,
+      "norm_label": "redis",
+      "id": "readme_redis"
     },
     {
       "label": "Docker",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 15,
-      "id": "readme_docker",
-      "community": 1,
-      "norm_label": "docker"
+      "community": 2,
+      "norm_label": "docker",
+      "id": "readme_docker"
     },
     {
       "label": "Linux",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 15,
-      "id": "readme_linux",
-      "community": 1,
-      "norm_label": "linux"
+      "community": 2,
+      "norm_label": "linux",
+      "id": "readme_linux"
     },
     {
       "label": "Fabric",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 19,
-      "id": "readme_fabric",
-      "community": 4,
-      "norm_label": "fabric"
+      "community": 2,
+      "norm_label": "fabric",
+      "id": "readme_fabric"
     },
     {
       "label": "100,000+ downloads",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": 20,
-      "id": "readme_100k-downloads",
-      "community": 4,
-      "norm_label": "100,000+ downloads"
+      "community": 2,
+      "norm_label": "100,000+ downloads",
+      "id": "readme_100k-downloads"
     },
     {
       "label": "Portfolio Logo (Favicon)",
       "file_type": "image",
       "source_file": "public/favicon.svg",
       "source_location": null,
-      "id": "favicon_portfolio-logo",
-      "community": 8,
-      "norm_label": "portfolio logo (favicon)"
+      "community": 0,
+      "norm_label": "portfolio logo (favicon)",
+      "id": "favicon_portfolio-logo"
     },
     {
       "label": "Gradient O1 (Blue to Light Blue)",
       "file_type": "image",
       "source_file": "public/favicon.svg",
       "source_location": 3,
-      "id": "favicon_gradient-o1",
-      "community": 2,
-      "norm_label": "gradient o1 (blue to light blue)"
+      "community": 4,
+      "norm_label": "gradient o1 (blue to light blue)",
+      "id": "favicon_gradient-o1"
     },
     {
       "label": "Gradient O2 (Light Blue to Cyan)",
       "file_type": "image",
       "source_file": "public/favicon.svg",
       "source_location": 7,
-      "id": "favicon_gradient-o2",
-      "community": 5,
-      "norm_label": "gradient o2 (light blue to cyan)"
+      "community": 7,
+      "norm_label": "gradient o2 (light blue to cyan)",
+      "id": "favicon_gradient-o2"
     },
     {
       "label": "Gradient O3 (Dark Blue to Light Blue)",
       "file_type": "image",
       "source_file": "public/favicon.svg",
       "source_location": 11,
-      "id": "favicon_gradient-o3",
-      "community": 2,
-      "norm_label": "gradient o3 (dark blue to light blue)"
+      "community": 4,
+      "norm_label": "gradient o3 (dark blue to light blue)",
+      "id": "favicon_gradient-o3"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_brand_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_layout_spacing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_elevation_depth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_shapes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_buttons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_cards_project_schematic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_input_fields_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_navigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_skills_network",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_expertise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_experience",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_skills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_journey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "portfolio_readme_expertise",
+      "target": "portfolio_readme_full_stack_web_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "portfolio_readme_expertise",
+      "target": "portfolio_readme_minecraft_mod_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "portfolio_readme_experience",
+      "target": "portfolio_readme_freelance_developer_2022_present",
+      "confidence_score": 1.0
+    },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
@@ -1403,5 +1801,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "6e89a4e7f696649c6753ebbca9bb1e5914d47d99"
+  "built_at_commit": "b725e4db24f073e9114b3fea8548882473e8ca53"
 }
