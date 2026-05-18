@@ -14,7 +14,7 @@ const stepLabels = ["01", "02", "03", "04", "05"];
     <a href="#" class="font-mono text-sm tracking-label-mono text-surface-tint hover:text-surface-tint transition-colors">
       &lt;dev&gt;
     </a>
-    <div class="hidden md:flex items-center gap-8">
+    <div class="hidden lg:flex items-center gap-8">
       {sections.map((s, i) => (
         <a
           href={`#${s.id}`}
@@ -26,11 +26,11 @@ const stepLabels = ["01", "02", "03", "04", "05"];
     </div>
     <a
       href="#contact"
-      class="text-xs font-mono tracking-label-caps uppercase px-4 py-2 btn-outline rounded-none transition-all duration-200 hidden md:inline-block"
+      class="text-xs font-mono tracking-label-caps uppercase px-4 py-2 btn-outline rounded-none transition-all duration-200 hidden lg:inline-block"
     >
       Hire Me
     </a>
-    <button id="menu-toggle" class="md:hidden text-on-surface cursor-pointer" aria-label="Open menu">
+    <button id="menu-toggle" class="lg:hidden text-on-surface cursor-pointer" aria-label="Open menu">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M3 12h18M3 6h18M3 18h18"/>
       </svg>
@@ -38,7 +38,7 @@ const stepLabels = ["01", "02", "03", "04", "05"];
   </div>
 </nav>
 
-<div id="mobile-menu" class="fixed inset-0 z-50 bg-surface/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 hidden">
+<div id="mobile-menu" class="fixed inset-0 z-50 bg-surface/95 backdrop-blur-lg items-center justify-center gap-8 hidden">
   {sections.map((s, i) => (
     <a
       href={`#${s.id}`}
@@ -74,8 +74,14 @@ const stepLabels = ["01", "02", "03", "04", "05"];
     }
   });
 
-  function openMenu() { mobileMenu?.classList.remove("hidden"); }
-  function closeMenu() { mobileMenu?.classList.add("hidden"); }
+  function openMenu() {
+    mobileMenu?.classList.remove("hidden");
+    mobileMenu?.classList.add("flex", "flex-col");
+  }
+  function closeMenu() {
+    mobileMenu?.classList.add("hidden");
+    mobileMenu?.classList.remove("flex", "flex-col");
+  }
 
   menuToggle?.addEventListener("click", openMenu);
   menuClose?.addEventListener("click", closeMenu);
