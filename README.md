@@ -1,43 +1,51 @@
-# Astro Starter Kit: Minimal
+# Raehan Damai Putra (TheSmoothRere)
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+**Full-Stack Web Developer | Minecraft Mod Developer**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+I build scalable, high-performance web applications and mods. With expertise in modern frameworks and tools, I deliver solutions that combine technical precision with creativity.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Expertise
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### **Full-Stack Web Development**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **Frontend**: React, Next.js, Astro, Tailwind CSS
+- **Backend**: Spring Boot, REST APIs
+- **Databases**: PostgreSQL, Redis
+- **DevOps**: Docker, Linux
+- **Other**: Git, CI/CD, Cloud Deployment
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### **Minecraft Mod Development**
 
-Any static assets, like images, can be placed in the `public/` directory.
+- **Framework**: Fabric
+- **Achievements**: 100,000+ downloads across mods
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 💼 Experience
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+### **Freelance Developer** | _2022 – Present_
 
-## 👀 Want to learn more?
+- Developed and maintained **full-stack web applications** for clients using **React, Next.js, and Spring Boot**.
+- Designed and deployed **RESTful APIs** with **PostgreSQL** and **Redis** for optimized performance.
+- Containerized applications using **Docker** and managed deployments on **Linux** servers.
+- Created **Minecraft mods** with **Fabric**, achieving **100,000+ downloads** and a growing community.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## 🛠️ Skills
+
+| **Category**  | **Technologies**                    |
+| ------------- | ----------------------------------- |
+| **Frontend**  | React, Next.js, Astro, Tailwind CSS |
+| **Backend**   | Spring Boot, REST APIs              |
+| **Databases** | PostgreSQL, Redis                   |
+| **DevOps**    | Docker, Linux                       |
+| **Tools**     | Git, CI/CD, Cloud Deployment        |
+
+---
+
+## 🌱 Journey
+
+My passion for development began with **Minecraft modding**, where I learned the fundamentals of coding and problem-solving. Over time, I transitioned into **web development**, expanding my skill set to build **scalable and efficient applications**. Today, I combine my technical expertise with a creative mindset to deliver impactful solutions.
