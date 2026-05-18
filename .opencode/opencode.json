@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": true,
+  "formatter": true,
+  "mcp": {
+    "tailwindcss-mcp": {
+      "type": "local",
+      "command": ["pnpm", "dlx", "tailwindcss-mcp-server@latest"],
+      "enabled": true
+    },
+    "astro": {
+      "type": "remote",
+      "url": "https://mcp.docs.astro.build/mcp",
+      "enabled": true
+    },
+    "hugeicons": {
+      "type": "local",
+      "command": ["pnpm", "dlx", "@hugeicons/mcp-server"],
+      "enabled": true
+    }
+  }
+}
