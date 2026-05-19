@@ -29,7 +29,7 @@ const skillGroups = [
   <div class="max-w-6xl mx-auto px-6">
     <SectionLabel number="03" label="Skills" class="mb-8" />
 
-    <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+    <div data-animate-stagger="fade-up" data-stagger-delay="0.1" class="grid md:grid-cols-2 gap-x-12 gap-y-10">
       {skillGroups.map((group, gi) => (
         <div>
           <div class="flex items-center gap-3 mb-5">
@@ -62,8 +62,9 @@ const skillGroups = [
           <div class="text-xs font-mono tracking-label-mono text-on-surface-variant">{lang}</div>
           <div class="mt-2 h-1 rounded-full bg-surface-container-high overflow-hidden">
             <div
-              class="h-full rounded-full bg-surface-tint/60 transition-all duration-500"
-              style={{ width: lang === "React" ? "92%" : lang === "Spring Boot" ? "88%" : lang === "Docker" ? "85%" : "90%" }}
+              class="h-full rounded-full bg-surface-tint/60 animate-progress-bar"
+              data-width={lang === "React" ? "92%" : lang === "Spring Boot" ? "88%" : lang === "Docker" ? "85%" : "90%"}
+              style="width: 0%"
             ></div>
           </div>
         </div>

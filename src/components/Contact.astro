@@ -7,7 +7,7 @@ import SectionLabel from "./SectionLabel.astro";
     <SectionLabel number="05" label="Contact" class="mb-8" />
 
     <div class="grid md:grid-cols-2 gap-16 overflow-x-hidden">
-      <div>
+      <div data-animate="fade-left">
         <h3 class="text-display-lg font-display font-bold tracking-display text-on-surface leading-[1.1] mb-6">
           Let's build<br />
           <span class="text-surface-tint">something</span> together
@@ -50,7 +50,7 @@ import SectionLabel from "./SectionLabel.astro";
         </div>
       </div>
 
-      <div class="card-border-glow rounded p-8 bg-surface-container/20">
+      <div data-animate="fade-right" data-animate-delay="100" class="card-border-glow rounded p-8 bg-surface-container/20">
         <form id="contact-form" class="flex flex-col gap-5">
           <div>
             <label for="name" class="block text-xs font-mono tracking-label-caps uppercase text-on-surface-variant mb-2">Name</label>

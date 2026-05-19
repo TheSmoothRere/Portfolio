@@ -15,6 +15,8 @@ const {
   path = "/",
 } = Astro.props;
 
+import ScrollReveal from "@/components/ScrollReveal.astro";
+
 const canonical = new URL(path, SITE_URL).href;
 const ogImage = new URL(image, SITE_URL).href;
 ---
@@ -83,5 +85,6 @@ const ogImage = new URL(image, SITE_URL).href;
       Skip to main content
     </a>
     <slot />
+    <ScrollReveal />
   </body>
 </html>

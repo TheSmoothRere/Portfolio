@@ -8,12 +8,12 @@ import SectionLabel from "./SectionLabel.astro";
 
     <div class="grid md:grid-cols-5 gap-8 md:gap-12">
       <div class="md:col-span-3">
-        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-display font-bold tracking-display text-on-surface leading-[1.1] mb-6 wrap-break-word">
+        <h3 data-animate="fade-up" class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-display font-bold tracking-display text-on-surface leading-[1.1] mb-6 wrap-break-word">
           From <span class="text-surface-tint">mods</span> to<br />
           full-stack — building<br />
           at every scale
         </h3>
-        <div class="space-y-4 text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-xl">
+        <div data-animate="fade-up" data-animate-delay="100" class="space-y-4 text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-xl">
           <p>
             My passion for development began with Minecraft modding in Java, where I learned the fundamentals of
             coding and problem-solving. Over time, I transitioned into full-stack web development, building modern
@@ -28,7 +28,7 @@ import SectionLabel from "./SectionLabel.astro";
         </div>
       </div>
 
-      <div class="md:col-span-2 flex flex-col gap-4">
+      <div data-animate-stagger="fade-up" data-stagger-delay="0.1" data-animate-delay="200" class="md:col-span-2 flex flex-col gap-4">
         <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
           <span class="node shrink-0"></span>
           <div class="min-w-0">

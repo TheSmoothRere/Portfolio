@@ -1,0 +1,117 @@
+<script>
+import { animate, scroll, inView } from "motion";
+
+const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!prefersReduced) {
+  const animations: Record<string, Record<string, (string | number)[]>> = {
+    "fade-up": {
+      opacity: [0, 1],
+      transform: ["translateY(2rem)", "translateY(0)"],
+    },
+    "fade-down": {
+      opacity: [0, 1],
+      transform: ["translateY(-2rem)", "translateY(0)"],
+    },
+    "fade-left": {
+      opacity: [0, 1],
+      transform: ["translateX(-2rem)", "translateX(0)"],
+    },
+    "fade-right": {
+      opacity: [0, 1],
+      transform: ["translateX(2rem)", "translateX(0)"],
+    },
+    "fade-scale": {
+      opacity: [0, 1],
+      transform: ["scale(0.9)", "scale(1)"],
+    },
+    "fade": {
+      opacity: [0, 1],
+    },
+    "scale-up": {
+      transform: ["scale(0.8)", "scale(1)"],
+      opacity: [0, 1],
+    },
+  };
+
+  document.querySelectorAll("[data-animate]").forEach((raw) => {
+    const el = raw as HTMLElement;
+    const type = el.getAttribute("data-animate") || "fade-up";
+    const delay = parseInt(el.getAttribute("data-animate-delay") || "0", 10);
+    const duration = parseFloat(el.getAttribute("data-animate-duration") || "0.5");
+    const keyframes = animations[type] || animations["fade-up"];
+    const once = el.getAttribute("data-animate-once") !== "false";
+
+    el.style.opacity = "0";
+
+    inView(
+      el,
+      () => {
+        animate(
+          el,
+          keyframes as any,
+          { duration, delay: delay / 1000, easing: [0.25, 0.1, 0.25, 1] as any }
+        );
+      },
+      once ? { amount: 0.15 } : { amount: 0 }
+    );
+  });
+
+  document.querySelectorAll("[data-animate-stagger]").forEach((raw) => {
+    const parent = raw as HTMLElement;
+    const childType = parent.getAttribute("data-animate-stagger") || "fade-up";
+    const staggerDelay = parseFloat(parent.getAttribute("data-stagger-delay") || "0.08");
+    const delay = parseInt(parent.getAttribute("data-animate-delay") || "0", 10);
+    const keyframes = animations[childType] || animations["fade-up"];
+
+    const children = Array.from(parent.children) as HTMLElement[];
+    children.forEach((child) => {
+      child.style.opacity = "0";
+    });
+
+    inView(
+      parent,
+      () => {
+        children.forEach((child, i) => {
+          animate(
+            child,
+            keyframes as any,
+            {
+              duration: 0.45,
+              delay: delay / 1000 + i * staggerDelay,
+              easing: [0.25, 0.1, 0.25, 1] as any,
+            }
+          );
+        });
+      },
+      { amount: 0.15 }
+    );
+  });
+
+  document.querySelectorAll(".animate-progress-bar").forEach((raw) => {
+    const el = raw as HTMLElement;
+    inView(
+      el,
+      () => {
+        const w = el.style.width || el.getAttribute("data-width") || "0%";
+        animate(
+          el,
+          { width: [0, w] } as any,
+          { duration: 1, easing: [0.25, 0.1, 0.25, 1] as any }
+        );
+      },
+      { amount: 0.3 }
+    );
+  });
+
+  document.querySelectorAll("[data-animate-line]").forEach((raw) => {
+    const el = raw as HTMLElement;
+    const target = document.querySelector(el.getAttribute("data-animate-line") || "");
+    if (!target) return;
+    scroll(animate(el, { scaleY: [0, 1] } as any, { easing: [0.25, 0.1, 0.25, 1] as any }), {
+      target,
+      offset: ["start end", "start start"],
+    });
+  });
+}
+</script>

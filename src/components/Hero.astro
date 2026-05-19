@@ -14,7 +14,7 @@
   </div>
 
   <div class="relative z-10 max-w-6xl mx-auto px-6 pt-28 pb-20 w-full">
-    <div class="mb-6 md:mb-8 flex items-center gap-2 font-mono text-xs tracking-label-caps text-surface-tint">
+    <div data-animate="fade-down" data-animate-delay="100" class="mb-6 md:mb-8 flex items-center gap-2 font-mono text-xs tracking-label-caps text-surface-tint">
       <span
         class="w-2 h-2 rounded-full bg-surface-tint shadow-[0_0_8px] shadow-surface-tint/60"
       ></span>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="relative">
-      <div class="max-w-4xl flex flex-col items-start">
+      <div data-animate="fade-up" class="max-w-4xl flex flex-col items-start">
         <h1
           class="text-4xl sm:text-5xl md:text-6xl lg:text-display-xl font-display font-bold tracking-display text-on-surface leading-[1.1] mb-4 wrap-break-word"
         >
@@ -45,12 +45,14 @@
       </div>
       <img
         src="/favicon.svg"
-        alt=""
+        alt="hero-icon"
+        data-animate="fade-right"
+        data-animate-delay="300"
         class="absolute -top-8 right-0 lg:-right-12 w-40 md:w-52 lg:w-64 opacity-30 hidden lg:block pointer-events-none"
       />
     </div>
 
-    <div class="flex flex-wrap items-center gap-4">
+    <div data-animate="fade-up" data-animate-delay="300" class="flex flex-wrap items-center gap-4">
       <a
         href="#projects"
         class="text-xs sm:text-sm font-mono tracking-label-caps uppercase px-5 sm:px-6 py-3 btn-outline rounded-none transition-all duration-200 flex items-center gap-2 group"
