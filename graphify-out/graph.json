@@ -1008,9 +1008,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_brand_style",
-      "confidence_score": 1.0
+      "target": "portfolio_design_brand_style"
     },
     {
       "relation": "contains",
@@ -1018,9 +1018,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_colors",
-      "confidence_score": 1.0
+      "target": "portfolio_design_colors"
     },
     {
       "relation": "contains",
@@ -1028,9 +1028,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_typography",
-      "confidence_score": 1.0
+      "target": "portfolio_design_typography"
     },
     {
       "relation": "contains",
@@ -1038,9 +1038,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_layout_spacing",
-      "confidence_score": 1.0
+      "target": "portfolio_design_layout_spacing"
     },
     {
       "relation": "contains",
@@ -1048,9 +1048,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_elevation_depth",
-      "confidence_score": 1.0
+      "target": "portfolio_design_elevation_depth"
     },
     {
       "relation": "contains",
@@ -1058,9 +1058,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_shapes",
-      "confidence_score": 1.0
+      "target": "portfolio_design_shapes"
     },
     {
       "relation": "contains",
@@ -1068,9 +1068,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_md",
-      "target": "portfolio_design_components",
-      "confidence_score": 1.0
+      "target": "portfolio_design_components"
     },
     {
       "relation": "contains",
@@ -1078,9 +1078,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_design_components",
-      "target": "portfolio_design_buttons",
-      "confidence_score": 1.0
+      "target": "portfolio_design_buttons"
     },
     {
       "relation": "contains",
@@ -1088,9 +1088,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_design_components",
-      "target": "portfolio_design_cards_project_schematic",
-      "confidence_score": 1.0
+      "target": "portfolio_design_cards_project_schematic"
     },
     {
       "relation": "contains",
@@ -1098,9 +1098,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_design_components",
-      "target": "portfolio_design_input_fields_tags",
-      "confidence_score": 1.0
+      "target": "portfolio_design_input_fields_tags"
     },
     {
       "relation": "contains",
@@ -1108,9 +1108,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_design_components",
-      "target": "portfolio_design_navigation",
-      "confidence_score": 1.0
+      "target": "portfolio_design_navigation"
     },
     {
       "relation": "contains",
@@ -1118,9 +1118,9 @@
       "source_file": "DESIGN.md",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_design_components",
-      "target": "portfolio_design_skills_network",
-      "confidence_score": 1.0
+      "target": "portfolio_design_skills_network"
     },
     {
       "relation": "contains",
@@ -1128,9 +1128,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "portfolio_readme_raehan_damai_putra_thesmoothrere",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_raehan_damai_putra_thesmoothrere"
     },
     {
       "relation": "contains",
@@ -1138,9 +1138,9 @@
       "source_file": "README.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
-      "target": "portfolio_readme_expertise",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_expertise"
     },
     {
       "relation": "contains",
@@ -1148,9 +1148,9 @@
       "source_file": "README.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
-      "target": "portfolio_readme_experience",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_experience"
     },
     {
       "relation": "contains",
@@ -1158,9 +1158,9 @@
       "source_file": "README.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
-      "target": "portfolio_readme_skills",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_skills"
     },
     {
       "relation": "contains",
@@ -1168,9 +1168,9 @@
       "source_file": "README.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
-      "target": "portfolio_readme_journey",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_journey"
     },
     {
       "relation": "contains",
@@ -1178,9 +1178,9 @@
       "source_file": "README.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_expertise",
-      "target": "portfolio_readme_full_stack_web_development",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_full_stack_web_development"
     },
     {
       "relation": "contains",
@@ -1188,9 +1188,9 @@
       "source_file": "README.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_expertise",
-      "target": "portfolio_readme_minecraft_mod_development",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_minecraft_mod_development"
     },
     {
       "relation": "contains",
@@ -1198,9 +1198,9 @@
       "source_file": "README.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_readme_experience",
-      "target": "portfolio_readme_freelance_developer_2022_present",
-      "confidence_score": 1.0
+      "target": "portfolio_readme_freelance_developer_2022_present"
     },
     {
       "relation": "conceptually_related_to",
@@ -1801,5 +1801,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "b725e4db24f073e9114b3fea8548882473e8ca53"
+  "built_at_commit": "01e992db9f942c91d03b87d55f27951fe80f05d3"
 }
