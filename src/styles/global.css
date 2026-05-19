@@ -104,34 +104,52 @@
 
 @layer utilities {
   .bg-grid {
-    background-image: linear-gradient(var(--color-surface-container-low) 1px, transparent 1px),
-      linear-gradient(90deg, var(--color-surface-container-low) 1px, transparent 1px);
+    background-image:
+      linear-gradient(var(--color-surface-container-low) 1px, transparent 1px),
+      linear-gradient(
+        90deg,
+        var(--color-surface-container-low) 1px,
+        transparent 1px
+      );
     background-size: 40px 40px;
   }
+
   .glow-spring {
-    box-shadow: 0 0 60px color-mix(in srgb, var(--color-surface-tint) 15%, transparent);
+    box-shadow: 0 0 60px
+      color-mix(in srgb, var(--color-surface-tint) 15%, transparent);
   }
+
   .glow-spring-sm {
-    box-shadow: 0 0 30px color-mix(in srgb, var(--color-surface-tint) 10%, transparent);
+    box-shadow: 0 0 30px
+      color-mix(in srgb, var(--color-surface-tint) 10%, transparent);
   }
+
   .bg-glass {
     background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+
   .bg-glass-card {
-    background-color: color-mix(in srgb, var(--color-surface-container) 60%, transparent);
+    background-color: color-mix(
+      in srgb,
+      var(--color-surface-container) 60%,
+      transparent
+    );
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
+
   .node {
     width: 8px;
     height: 8px;
     border-radius: 9999px;
     background: var(--color-surface-tint);
-    box-shadow: 0 0 12px color-mix(in srgb, var(--color-surface-tint) 50%, transparent);
+    box-shadow: 0 0 12px
+      color-mix(in srgb, var(--color-surface-tint) 50%, transparent);
     flex-shrink: 0;
   }
+
   .wire {
     width: 2px;
     flex-shrink: 0;
@@ -141,14 +159,17 @@
       var(--color-surface-tint)
     );
   }
+
   .wire-horizontal {
     height: 2px;
     flex-shrink: 0;
     background: var(--color-surface-container-high);
   }
+
   .link-underline {
     position: relative;
   }
+
   .link-underline::after {
     content: "";
     position: absolute;
@@ -159,28 +180,48 @@
     background: var(--color-surface-tint);
     transition: width 0.3s ease;
   }
+
   .link-underline:hover::after {
     width: 100%;
   }
+
   .card-border-glow {
     border: 1px solid var(--color-surface-container-high);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
   }
+
   .card-border-glow:hover {
-    border-color: color-mix(in srgb, var(--color-surface-tint) 40%, transparent);
-    box-shadow: 0 0 30px color-mix(in srgb, var(--color-surface-tint) 8%, transparent);
+    border-color: color-mix(
+      in srgb,
+      var(--color-surface-tint) 40%,
+      transparent
+    );
+    box-shadow: 0 0 30px
+      color-mix(in srgb, var(--color-surface-tint) 8%, transparent);
   }
+
   .btn-outline {
     border: 1px solid var(--color-surface-tint);
     color: var(--color-surface-tint);
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
   }
+
   .btn-outline:hover {
-    background-color: color-mix(in srgb, var(--color-surface-tint) 10%, transparent);
+    background-color: color-mix(
+      in srgb,
+      var(--color-surface-tint) 10%,
+      transparent
+    );
   }
+
   .card-top-wire {
     position: relative;
   }
+
   .card-top-wire::before {
     content: "";
     position: absolute;
@@ -191,6 +232,7 @@
     background: var(--color-surface-container-highest);
     transition: background 0.3s ease;
   }
+
   .card-top-wire::after {
     content: "";
     position: absolute;
@@ -200,19 +242,26 @@
     height: 8px;
     border-radius: 9999px;
     background: var(--color-surface-container-highest);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      background 0.3s ease,
+      box-shadow 0.3s ease;
   }
+
   .card-top-wire:hover::before {
     background: var(--color-surface-tint);
   }
+
   .card-top-wire:hover::after {
     background: var(--color-surface-tint);
-    box-shadow: 0 0 12px color-mix(in srgb, var(--color-surface-tint) 50%, transparent);
+    box-shadow: 0 0 12px
+      color-mix(in srgb, var(--color-surface-tint) 50%, transparent);
   }
+
   .img-grayscale {
     filter: grayscale(100%);
     transition: filter 0.4s ease;
   }
+
   .img-grayscale:hover {
     filter: grayscale(0%);
   }
