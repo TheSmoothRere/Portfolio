@@ -126,8 +126,6 @@
 
   .bg-glass {
     background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
 
   .bg-glass-card {
