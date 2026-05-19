@@ -12,7 +12,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
         CONTACT_LINKS.map((link) => {
           return (
             <a
-              href={link.href}
+              href={link.href} target="_blank"
               class="px-3 py-2 text-xs font-mono flex flex-col items-center gap-2 tracking-label-caps text-on-surface-variant hover:text-surface-tint transition-colors rounded-sm hover:bg-surface-container/50"
             >
               <HugeiconsIcon icon={link.icon} size={18} />

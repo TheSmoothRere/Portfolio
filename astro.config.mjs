@@ -7,7 +7,14 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), robotsTxt(), react()],
+  site: "https://thesmoothrere-portfolio.pages.dev",
+  integrations: [
+    sitemap({
+      lastmod: new Date(),
+    }),
+    robotsTxt(),
+    react(),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },
