@@ -39,10 +39,16 @@ if (!prefersReduced) {
     const type = el.getAttribute("data-animate") || "fade-up";
     const delay = parseInt(el.getAttribute("data-animate-delay") || "0", 10);
     const duration = parseFloat(el.getAttribute("data-animate-duration") || "0.5");
-    const keyframes = animations[type] || animations["fade-up"];
+    const keyframes = { ...(animations[type] || animations["fade-up"]) };
     const once = el.getAttribute("data-animate-once") !== "false";
+    const origOpacity = parseFloat(getComputedStyle(el).opacity);
 
-    el.style.opacity = "0";
+    if (origOpacity < 1 && keyframes.opacity) {
+      keyframes.opacity = [0, origOpacity];
+    }
+    if (origOpacity >= 1) {
+      el.style.opacity = "0";
+    }
 
     inView(
       el,
@@ -50,7 +56,7 @@ if (!prefersReduced) {
         animate(
           el,
           keyframes as any,
-          { duration, delay: delay / 1000, easing: [0.25, 0.1, 0.25, 1] as any }
+          { duration, delay: delay / 1000, easing: [0.25, 0.1, 0.25, 1] } as any
         );
       },
       once ? { amount: 0.15 } : { amount: 0 }
@@ -62,11 +68,18 @@ if (!prefersReduced) {
     const childType = parent.getAttribute("data-animate-stagger") || "fade-up";
     const staggerDelay = parseFloat(parent.getAttribute("data-stagger-delay") || "0.08");
     const delay = parseInt(parent.getAttribute("data-animate-delay") || "0", 10);
-    const keyframes = animations[childType] || animations["fade-up"];
 
     const children = Array.from(parent.children) as HTMLElement[];
-    children.forEach((child) => {
-      child.style.opacity = "0";
+    const childKeyframes: Record<string, (string | number)[]>[] = children.map((child) => {
+      const kf = { ...(animations[childType] || animations["fade-up"]) };
+      const origOpacity = parseFloat(getComputedStyle(child).opacity);
+      if (origOpacity < 1 && kf.opacity) {
+        kf.opacity = [0, origOpacity];
+      }
+      if (origOpacity >= 1) {
+        child.style.opacity = "0";
+      }
+      return kf;
     });
 
     inView(
@@ -75,12 +88,12 @@ if (!prefersReduced) {
         children.forEach((child, i) => {
           animate(
             child,
-            keyframes as any,
+            childKeyframes[i] as any,
             {
               duration: 0.45,
               delay: delay / 1000 + i * staggerDelay,
-              easing: [0.25, 0.1, 0.25, 1] as any,
-            }
+              easing: [0.25, 0.1, 0.25, 1],
+            } as any
           );
         });
       },
@@ -97,7 +110,7 @@ if (!prefersReduced) {
         animate(
           el,
           { width: [0, w] } as any,
-          { duration: 1, easing: [0.25, 0.1, 0.25, 1] as any }
+          { duration: 1, easing: [0.25, 0.1, 0.25, 1] } as any
         );
       },
       { amount: 0.3 }
@@ -108,7 +121,7 @@ if (!prefersReduced) {
     const el = raw as HTMLElement;
     const target = document.querySelector(el.getAttribute("data-animate-line") || "");
     if (!target) return;
-    scroll(animate(el, { scaleY: [0, 1] } as any, { easing: [0.25, 0.1, 0.25, 1] as any }), {
+    scroll(animate(el, { scaleY: [0, 1] } as any, { easing: [0.25, 0.1, 0.25, 1] } as any), {
       target,
       offset: ["start end", "start start"],
     });
