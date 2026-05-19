@@ -3,29 +3,22 @@ import SectionLabel from "./SectionLabel.astro";
 
 const projects = [
   {
-    title: "Minecraft Mods",
-    desc: "Fabric-based Minecraft mods with 100,000+ total downloads and an active community. Features custom gameplay mechanics and optimizations.",
-    tags: ["Fabric", "Java", "Minecraft", "Modding"],
-    href: "#",
-    accent: true,
+    title: "Portfolio Website",
+    desc: "Personal portfolio website showcasing my projects, skills, and experience.",
+    tags: ["Astro", "TypeScript", "Tailwind CSS", "Cloudflare Pages"],
+    href: "https://github.com/TheSmoothRere/Portfolio",
   },
   {
-    title: "Full-Stack Web Apps",
-    desc: "Scalable web applications built for clients using React, Next.js, and Spring Boot with PostgreSQL and Redis backends.",
-    tags: ["React", "Next.js", "Spring Boot", "PostgreSQL"],
-    href: "#",
+    title: "RéVoice Bot",
+    desc: "A Discord bot that auto‑creates and cleans up temporary voice channels. It clones a trigger channel with all its settings and permissions, ensuring servers never run out of voice channels.",
+    tags: ["Redis", "Spring Boot", "PostgreSQL", "JDA"],
+    href: "https://github.com/TheSmoothRere/ReVoice-Bot",
   },
   {
-    title: "RESTful APIs",
-    desc: "Designed and deployed RESTful APIs with optimized performance using PostgreSQL for persistence and Redis for caching.",
-    tags: ["REST APIs", "PostgreSQL", "Redis", "Docker"],
-    href: "#",
-  },
-  {
-    title: "Cloud Deployments",
-    desc: "Containerized applications deployed on Linux servers using Docker with CI/CD pipelines for automated releases.",
-    tags: ["Docker", "Linux", "CI/CD", "Cloud"],
-    href: "#",
+    title: "TheSmoothRere Web",
+    desc: "Personal branding site and digital garden. Sharing thoughts through my blog and building custom solutions via open commissions.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI"],
+    href: "https://github.com/TheSmoothRere/TheSmoothRere-Web",
   },
 ];
 ---
@@ -35,34 +28,51 @@ const projects = [
     <SectionLabel number="04" label="Projects" class="mb-8" />
 
     <div class="grid md:grid-cols-2 gap-5">
-      {projects.map((p) => (
-        <a href={p.href} class="group block card-border-glow rounded bg-surface-container/20 overflow-hidden card-top-wire">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-full border border-surface-container-highest flex items-center justify-center">
-                  <span class="w-2 h-2 rounded-full bg-surface-tint/60 group-hover:bg-surface-tint transition-colors"></span>
-                </span>
-                <span class="text-xs font-mono tracking-label-caps uppercase text-outline">Project</span>
+      {
+        projects.map((p) => (
+          <a
+            href={p.href}
+            class="group block card-border-glow rounded bg-surface-container/20 overflow-hidden card-top-wire"
+          >
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full border border-surface-container-highest flex items-center justify-center">
+                    <span class="w-2 h-2 rounded-full bg-surface-tint/60 group-hover:bg-surface-tint transition-colors" />
+                  </span>
+                  <span class="text-xs font-mono tracking-label-caps uppercase text-outline">
+                    Project
+                  </span>
+                </div>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="text-surface-tint/0 group-hover:text-surface-tint transition-all duration-300 -translate-x-1 group-hover:translate-x-0"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
               </div>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-surface-tint/0 group-hover:text-surface-tint transition-all duration-300 -translate-x-1 group-hover:translate-x-0">
-                <path d="M7 17l9.2-9.2M17 17V7H7"/>
-              </svg>
+              <h3 class="text-headline-md font-display font-bold text-on-surface mb-3 group-hover:text-surface-tint transition-colors">
+                {p.title}
+              </h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed mb-4">
+                {p.desc}
+              </p>
+              <div class="flex flex-wrap gap-2">
+                {p.tags.map((tag) => (
+                  <span class="text-[11px] font-mono tracking-label-caps uppercase px-2 py-1 rounded-sm bg-surface-container text-outline border border-surface-container-high">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
-            <h3 class="text-headline-md font-display font-bold text-on-surface mb-3 group-hover:text-surface-tint transition-colors">
-              {p.title}
-            </h3>
-            <p class="text-sm text-on-surface-variant leading-relaxed mb-4">{p.desc}</p>
-            <div class="flex flex-wrap gap-2">
-              {p.tags.map((tag) => (
-                <span class="text-[11px] font-mono tracking-label-caps uppercase px-2 py-1 rounded-sm bg-surface-container text-outline border border-surface-container-high">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        </a>
-      ))}
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>

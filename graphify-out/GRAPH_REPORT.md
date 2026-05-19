@@ -1,16 +1,16 @@
 # Graph Report - Portfolio  (2026-05-19)
 
 ## Corpus Check
-- 3 files · ~1,470 words
+- 4 files · ~1,582 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 102 nodes · 72 edges · 37 communities (9 shown, 28 thin omitted)
+- 103 nodes · 72 edges · 38 communities (10 shown, 28 thin omitted)
 - Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `01e992db`
+- Built from commit: `8b74489a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,7 +23,6 @@
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
@@ -51,6 +50,7 @@
 - [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Minimalist Cyberpunk` - 25 edges
@@ -82,7 +82,7 @@
 - **Color Palette** — design_color-surface, design_color-surface-dim, design_color-surface-bright, design_color-surface-container-lowest, design_color-surface-container-low, design_color-surface-container, design_color-surface-container-high, design_color-surface-container-highest, design_color-on-surface, design_color-on-surface-variant, design_color-primary, design_color-on-primary, design_color-primary-container, design_color-secondary, design_color-tertiary, design_color-error, design_color-background [EXTRACTED 1.00]
 - **Full-Stack Technologies** — readme_react, readme_nextjs, readme_astro, readme_spring-boot, readme_postgresql, readme_redis, readme_docker, readme_linux [EXTRACTED 1.00]
 
-## Communities (37 total, 28 thin omitted)
+## Communities (38 total, 28 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.1
@@ -125,9 +125,9 @@ Nodes (3): #00ff9f, Spring Green, Gradient O2 (Light Blue to Cyan)
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Minimalist Cyberpunk` connect `Community 0` to `Community 2`, `Community 4`, `Community 5`, `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.221) - this node is a cross-community bridge._
+  _High betweenness centrality (0.217) - this node is a cross-community bridge._
 - **Why does `Obsidian Blue` connect `Community 4` to `Community 0`?**
-  _High betweenness centrality (0.047) - this node is a cross-community bridge._
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **Are the 5 inferred relationships involving `Minimalist Cyberpunk` (e.g. with `esbuild` and `sharp`) actually correct?**
   _`Minimalist Cyberpunk` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `Obsidian Blue` (e.g. with `#051424` and `#051424`) actually correct?**

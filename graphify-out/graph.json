@@ -92,6 +92,15 @@
       "norm_label": "astro.config.mjs"
     },
     {
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "src/libs/constants.ts",
+      "source_location": "L1",
+      "id": "src_libs_constants_ts",
+      "community": 9,
+      "norm_label": "constants.ts"
+    },
+    {
       "label": "DESIGN.md",
       "file_type": "document",
       "source_file": "DESIGN.md",
@@ -519,7 +528,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 6,
-      "community": 9,
+      "community": 10,
       "norm_label": "#2c3a4c",
       "id": "design_color-surface-bright"
     },
@@ -528,7 +537,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 7,
-      "community": 10,
+      "community": 11,
       "norm_label": "#010f1f",
       "id": "design_color-surface-container-lowest"
     },
@@ -537,7 +546,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 8,
-      "community": 11,
+      "community": 12,
       "norm_label": "#0d1c2d",
       "id": "design_color-surface-container-low"
     },
@@ -546,7 +555,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 9,
-      "community": 12,
+      "community": 13,
       "norm_label": "#122131",
       "id": "design_color-surface-container"
     },
@@ -555,7 +564,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 10,
-      "community": 13,
+      "community": 14,
       "norm_label": "#1c2b3c",
       "id": "design_color-surface-container-high"
     },
@@ -564,7 +573,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 11,
-      "community": 14,
+      "community": 15,
       "norm_label": "#273647",
       "id": "design_color-surface-container-highest"
     },
@@ -573,7 +582,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 12,
-      "community": 15,
+      "community": 16,
       "norm_label": "#d4e4fa",
       "id": "design_color-on-surface"
     },
@@ -582,7 +591,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 13,
-      "community": 16,
+      "community": 17,
       "norm_label": "#b9cbbc",
       "id": "design_color-on-surface-variant"
     },
@@ -591,7 +600,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 19,
-      "community": 17,
+      "community": 18,
       "norm_label": "#f4fff4",
       "id": "design_color-primary"
     },
@@ -600,7 +609,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 20,
-      "community": 18,
+      "community": 19,
       "norm_label": "#00391f",
       "id": "design_color-on-primary"
     },
@@ -618,7 +627,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 24,
-      "community": 19,
+      "community": 20,
       "norm_label": "#c0c6db",
       "id": "design_color-secondary"
     },
@@ -627,7 +636,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 28,
-      "community": 20,
+      "community": 21,
       "norm_label": "#fffbff",
       "id": "design_color-tertiary"
     },
@@ -636,7 +645,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 32,
-      "community": 21,
+      "community": 22,
       "norm_label": "#ffb4ab",
       "id": "design_color-error"
     },
@@ -717,7 +726,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 95,
-      "community": 22,
+      "community": 23,
       "norm_label": "0.25rem",
       "id": "design_rounded-sm"
     },
@@ -726,7 +735,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 96,
-      "community": 23,
+      "community": 24,
       "norm_label": "0.5rem",
       "id": "design_rounded-default"
     },
@@ -735,7 +744,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 97,
-      "community": 24,
+      "community": 25,
       "norm_label": "0.75rem",
       "id": "design_rounded-md"
     },
@@ -744,7 +753,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 98,
-      "community": 25,
+      "community": 26,
       "norm_label": "1rem",
       "id": "design_rounded-lg"
     },
@@ -753,7 +762,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 99,
-      "community": 26,
+      "community": 27,
       "norm_label": "1.5rem",
       "id": "design_rounded-xl"
     },
@@ -762,7 +771,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 100,
-      "community": 27,
+      "community": 28,
       "norm_label": "9999px",
       "id": "design_rounded-full"
     },
@@ -771,7 +780,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 102,
-      "community": 28,
+      "community": 29,
       "norm_label": "4px",
       "id": "design_spacing-unit"
     },
@@ -780,7 +789,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 103,
-      "community": 29,
+      "community": 30,
       "norm_label": "4px",
       "id": "design_spacing-xs"
     },
@@ -789,7 +798,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 104,
-      "community": 30,
+      "community": 31,
       "norm_label": "8px",
       "id": "design_spacing-sm"
     },
@@ -798,7 +807,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 105,
-      "community": 31,
+      "community": 32,
       "norm_label": "16px",
       "id": "design_spacing-md"
     },
@@ -807,7 +816,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 106,
-      "community": 32,
+      "community": 33,
       "norm_label": "24px",
       "id": "design_spacing-lg"
     },
@@ -816,7 +825,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 107,
-      "community": 33,
+      "community": 34,
       "norm_label": "32px",
       "id": "design_spacing-xl"
     },
@@ -825,7 +834,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 108,
-      "community": 34,
+      "community": 35,
       "norm_label": "48px",
       "id": "design_spacing-xxl"
     },
@@ -834,7 +843,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 109,
-      "community": 35,
+      "community": 36,
       "norm_label": "96px",
       "id": "design_spacing-section-y"
     },
@@ -843,7 +852,7 @@
       "file_type": "code",
       "source_file": "DESIGN.md",
       "source_location": 110,
-      "community": 36,
+      "community": 37,
       "norm_label": "24px",
       "id": "design_spacing-gutter"
     },
@@ -1801,5 +1810,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "01e992db9f942c91d03b87d55f27951fe80f05d3"
+  "built_at_commit": "8b74489a9923d96099d9ea0941ea30afe1db0e1e"
 }
