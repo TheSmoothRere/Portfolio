@@ -79,6 +79,9 @@ const ogImage = new URL(image, SITE_URL).href;
   <body
     class="bg-surface text-on-surface font-body antialiased selection:bg-surface-tint/20"
   >
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:px-4 focus:py-2 focus:bg-surface-tint focus:text-on-surface-tint focus:text-sm focus:font-mono focus:rounded-sm">
+      Skip to main content
+    </a>
     <slot />
   </body>
 </html>
