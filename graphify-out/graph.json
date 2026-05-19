@@ -1,0 +1,1814 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "design_system_components",
+        "label": "Design System Components",
+        "nodes": [
+          "design_neon-outline-button",
+          "design_print-pill",
+          "design_project-schematic-card",
+          "design_skills-network"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "DESIGN.md"
+      },
+      {
+        "id": "typography_system",
+        "label": "Typography System",
+        "nodes": [
+          "design_typography-display-xl",
+          "design_typography-display-xl-mobile",
+          "design_typography-display-lg",
+          "design_typography-headline-md",
+          "design_typography-body-base",
+          "design_typography-label-mono",
+          "design_typography-label-caps"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "DESIGN.md"
+      },
+      {
+        "id": "color_palette",
+        "label": "Color Palette",
+        "nodes": [
+          "design_color-surface",
+          "design_color-surface-dim",
+          "design_color-surface-bright",
+          "design_color-surface-container-lowest",
+          "design_color-surface-container-low",
+          "design_color-surface-container",
+          "design_color-surface-container-high",
+          "design_color-surface-container-highest",
+          "design_color-on-surface",
+          "design_color-on-surface-variant",
+          "design_color-primary",
+          "design_color-on-primary",
+          "design_color-primary-container",
+          "design_color-secondary",
+          "design_color-tertiary",
+          "design_color-error",
+          "design_color-background"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "DESIGN.md"
+      },
+      {
+        "id": "full_stack_technologies",
+        "label": "Full-Stack Technologies",
+        "nodes": [
+          "readme_react",
+          "readme_nextjs",
+          "readme_astro",
+          "readme_spring-boot",
+          "readme_postgresql",
+          "readme_redis",
+          "readme_docker",
+          "readme_linux"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "astro.config.mjs",
+      "file_type": "code",
+      "source_file": "astro.config.mjs",
+      "source_location": "L1",
+      "id": "astro_config_mjs",
+      "community": 8,
+      "norm_label": "astro.config.mjs"
+    },
+    {
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "src/libs/constants.ts",
+      "source_location": "L1",
+      "id": "src_libs_constants_ts",
+      "community": 9,
+      "norm_label": "constants.ts"
+    },
+    {
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L1",
+      "id": "design_md",
+      "community": 1,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Brand & Style",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L113",
+      "id": "portfolio_design_brand_style",
+      "community": 1,
+      "norm_label": "brand & style"
+    },
+    {
+      "label": "Colors",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L122",
+      "id": "portfolio_design_colors",
+      "community": 1,
+      "norm_label": "colors"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L135",
+      "id": "portfolio_design_typography",
+      "community": 1,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Layout & Spacing",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L143",
+      "id": "portfolio_design_layout_spacing",
+      "community": 1,
+      "norm_label": "layout & spacing"
+    },
+    {
+      "label": "Elevation & Depth",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L151",
+      "id": "portfolio_design_elevation_depth",
+      "community": 1,
+      "norm_label": "elevation & depth"
+    },
+    {
+      "label": "Shapes",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L159",
+      "id": "portfolio_design_shapes",
+      "community": 1,
+      "norm_label": "shapes"
+    },
+    {
+      "label": "Components",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L167",
+      "id": "portfolio_design_components",
+      "community": 1,
+      "norm_label": "components"
+    },
+    {
+      "label": "Buttons",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L169",
+      "id": "portfolio_design_buttons",
+      "community": 1,
+      "norm_label": "buttons"
+    },
+    {
+      "label": "Cards (Project/Schematic)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L173",
+      "id": "portfolio_design_cards_project_schematic",
+      "community": 1,
+      "norm_label": "cards (project/schematic)"
+    },
+    {
+      "label": "Input Fields & Tags",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L178",
+      "id": "portfolio_design_input_fields_tags",
+      "community": 1,
+      "norm_label": "input fields & tags"
+    },
+    {
+      "label": "Navigation",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L182",
+      "id": "portfolio_design_navigation",
+      "community": 1,
+      "norm_label": "navigation"
+    },
+    {
+      "label": "Skills Network",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L186",
+      "id": "portfolio_design_skills_network",
+      "community": 1,
+      "norm_label": "skills network"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Raehan Damai Putra (TheSmoothRere)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "community": 3,
+      "norm_label": "raehan damai putra (thesmoothrere)"
+    },
+    {
+      "label": "\ud83d\ude80 Expertise",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "id": "portfolio_readme_expertise",
+      "community": 3,
+      "norm_label": "\ud83d\ude80 expertise"
+    },
+    {
+      "label": "**Full-Stack Web Development**",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "id": "portfolio_readme_full_stack_web_development",
+      "community": 3,
+      "norm_label": "**full-stack web development**"
+    },
+    {
+      "label": "**Minecraft Mod Development**",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "id": "portfolio_readme_minecraft_mod_development",
+      "community": 3,
+      "norm_label": "**minecraft mod development**"
+    },
+    {
+      "label": "\ud83d\udcbc Experience",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "id": "portfolio_readme_experience",
+      "community": 3,
+      "norm_label": "\ud83d\udcbc experience"
+    },
+    {
+      "label": "**Freelance Developer** | _2022 \u2013 Present_",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "id": "portfolio_readme_freelance_developer_2022_present",
+      "community": 3,
+      "norm_label": "**freelance developer** | _2022 \u2013 present_"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f Skills",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "id": "portfolio_readme_skills",
+      "community": 3,
+      "norm_label": "\ud83d\udee0\ufe0f skills"
+    },
+    {
+      "label": "\ud83c\udf31 Journey",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "id": "portfolio_readme_journey",
+      "community": 3,
+      "norm_label": "\ud83c\udf31 journey"
+    },
+    {
+      "label": "esbuild",
+      "file_type": "code",
+      "source_file": "pnpm-workspace.yaml",
+      "source_location": 2,
+      "community": 0,
+      "norm_label": "esbuild",
+      "id": "pnpm-workspace_esbuild"
+    },
+    {
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "pnpm-workspace.yaml",
+      "source_location": 3,
+      "community": 0,
+      "norm_label": "sharp",
+      "id": "pnpm-workspace_sharp"
+    },
+    {
+      "label": "Cyber-Minimalist Portfolio",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 2,
+      "community": 0,
+      "norm_label": "cyber-minimalist portfolio",
+      "id": "design_cyber-minimalist-portfolio"
+    },
+    {
+      "label": "Minimalist Cyberpunk",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 116,
+      "community": 0,
+      "norm_label": "minimalist cyberpunk",
+      "id": "design_minimalist-cyberpunk"
+    },
+    {
+      "label": "Obsidian Canvas",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 117,
+      "community": 0,
+      "norm_label": "obsidian canvas",
+      "id": "design_obsidian-canvas"
+    },
+    {
+      "label": "Circuitry Metaphors",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 118,
+      "community": 0,
+      "norm_label": "circuitry metaphors",
+      "id": "design_circuitry-metaphors"
+    },
+    {
+      "label": "Tactile Offsets",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 119,
+      "community": 0,
+      "norm_label": "tactile offsets",
+      "id": "design_tactile-offsets"
+    },
+    {
+      "label": "Dual-Mode Logic",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 120,
+      "community": 0,
+      "norm_label": "dual-mode logic",
+      "id": "design_dual-mode-logic"
+    },
+    {
+      "label": "Spring Green",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 125,
+      "community": 7,
+      "norm_label": "spring green",
+      "id": "design_spring-green"
+    },
+    {
+      "label": "Obsidian Blue",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 126,
+      "community": 4,
+      "norm_label": "obsidian blue",
+      "id": "design_obsidian-blue"
+    },
+    {
+      "label": "Amber/Gold",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 127,
+      "community": 0,
+      "norm_label": "amber/gold",
+      "id": "design_amber-gold"
+    },
+    {
+      "label": "Slate/Gray",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 128,
+      "community": 0,
+      "norm_label": "slate/gray",
+      "id": "design_slate-gray"
+    },
+    {
+      "label": "Hanken Grotesk",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 138,
+      "community": 5,
+      "norm_label": "hanken grotesk",
+      "id": "design_hanken-grotesk"
+    },
+    {
+      "label": "Inter",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 139,
+      "community": 6,
+      "norm_label": "inter",
+      "id": "design_inter"
+    },
+    {
+      "label": "JetBrains Mono",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 140,
+      "community": 0,
+      "norm_label": "jetbrains mono",
+      "id": "design_jetbrains-mono"
+    },
+    {
+      "label": "Spine and Node",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 144,
+      "community": 0,
+      "norm_label": "spine and node",
+      "id": "design_spine-and-node"
+    },
+    {
+      "label": "Luminance and Layers",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 152,
+      "community": 0,
+      "norm_label": "luminance and layers",
+      "id": "design_luminance-layers"
+    },
+    {
+      "label": "Glassmorphism",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 155,
+      "community": 0,
+      "norm_label": "glassmorphism",
+      "id": "design_glassmorphism"
+    },
+    {
+      "label": "Geometric Shapes",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 160,
+      "community": 0,
+      "norm_label": "geometric shapes",
+      "id": "design_geometric-shapes"
+    },
+    {
+      "label": "Neon Outline Button",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 170,
+      "community": 0,
+      "norm_label": "neon outline button",
+      "id": "design_neon-outline-button"
+    },
+    {
+      "label": "Print Pill",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 171,
+      "community": 0,
+      "norm_label": "print pill",
+      "id": "design_print-pill"
+    },
+    {
+      "label": "Project/Schematic Card",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 173,
+      "community": 0,
+      "norm_label": "project/schematic card",
+      "id": "design_project-schematic-card"
+    },
+    {
+      "label": "Skills Network",
+      "file_type": "rationale",
+      "source_file": "DESIGN.md",
+      "source_location": 186,
+      "community": 0,
+      "norm_label": "skills network",
+      "id": "design_skills-network"
+    },
+    {
+      "label": "#051424",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 4,
+      "community": 4,
+      "norm_label": "#051424",
+      "id": "design_color-surface"
+    },
+    {
+      "label": "#051424",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 5,
+      "community": 4,
+      "norm_label": "#051424",
+      "id": "design_color-surface-dim"
+    },
+    {
+      "label": "#2c3a4c",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 6,
+      "community": 10,
+      "norm_label": "#2c3a4c",
+      "id": "design_color-surface-bright"
+    },
+    {
+      "label": "#010f1f",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 7,
+      "community": 11,
+      "norm_label": "#010f1f",
+      "id": "design_color-surface-container-lowest"
+    },
+    {
+      "label": "#0d1c2d",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 8,
+      "community": 12,
+      "norm_label": "#0d1c2d",
+      "id": "design_color-surface-container-low"
+    },
+    {
+      "label": "#122131",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 9,
+      "community": 13,
+      "norm_label": "#122131",
+      "id": "design_color-surface-container"
+    },
+    {
+      "label": "#1c2b3c",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 10,
+      "community": 14,
+      "norm_label": "#1c2b3c",
+      "id": "design_color-surface-container-high"
+    },
+    {
+      "label": "#273647",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 11,
+      "community": 15,
+      "norm_label": "#273647",
+      "id": "design_color-surface-container-highest"
+    },
+    {
+      "label": "#d4e4fa",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 12,
+      "community": 16,
+      "norm_label": "#d4e4fa",
+      "id": "design_color-on-surface"
+    },
+    {
+      "label": "#b9cbbc",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 13,
+      "community": 17,
+      "norm_label": "#b9cbbc",
+      "id": "design_color-on-surface-variant"
+    },
+    {
+      "label": "#f4fff4",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 19,
+      "community": 18,
+      "norm_label": "#f4fff4",
+      "id": "design_color-primary"
+    },
+    {
+      "label": "#00391f",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 20,
+      "community": 19,
+      "norm_label": "#00391f",
+      "id": "design_color-on-primary"
+    },
+    {
+      "label": "#00ff9f",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 21,
+      "community": 7,
+      "norm_label": "#00ff9f",
+      "id": "design_color-primary-container"
+    },
+    {
+      "label": "#c0c6db",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 24,
+      "community": 20,
+      "norm_label": "#c0c6db",
+      "id": "design_color-secondary"
+    },
+    {
+      "label": "#fffbff",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 28,
+      "community": 21,
+      "norm_label": "#fffbff",
+      "id": "design_color-tertiary"
+    },
+    {
+      "label": "#ffb4ab",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 32,
+      "community": 22,
+      "norm_label": "#ffb4ab",
+      "id": "design_color-error"
+    },
+    {
+      "label": "#051424",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 48,
+      "community": 4,
+      "norm_label": "#051424",
+      "id": "design_color-background"
+    },
+    {
+      "label": "Display XL (Hanken Grotesk)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 52,
+      "community": 5,
+      "norm_label": "display xl (hanken grotesk)",
+      "id": "design_typography-display-xl"
+    },
+    {
+      "label": "Display XL Mobile (Hanken Grotesk)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 58,
+      "community": 5,
+      "norm_label": "display xl mobile (hanken grotesk)",
+      "id": "design_typography-display-xl-mobile"
+    },
+    {
+      "label": "Display LG (Hanken Grotesk)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 64,
+      "community": 5,
+      "norm_label": "display lg (hanken grotesk)",
+      "id": "design_typography-display-lg"
+    },
+    {
+      "label": "Headline MD (Hanken Grotesk)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 70,
+      "community": 5,
+      "norm_label": "headline md (hanken grotesk)",
+      "id": "design_typography-headline-md"
+    },
+    {
+      "label": "Body Base (Inter)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 76,
+      "community": 6,
+      "norm_label": "body base (inter)",
+      "id": "design_typography-body-base"
+    },
+    {
+      "label": "Label Mono (JetBrains Mono)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 82,
+      "community": 0,
+      "norm_label": "label mono (jetbrains mono)",
+      "id": "design_typography-label-mono"
+    },
+    {
+      "label": "Label Caps (Inter)",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 88,
+      "community": 6,
+      "norm_label": "label caps (inter)",
+      "id": "design_typography-label-caps"
+    },
+    {
+      "label": "0.25rem",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 95,
+      "community": 23,
+      "norm_label": "0.25rem",
+      "id": "design_rounded-sm"
+    },
+    {
+      "label": "0.5rem",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 96,
+      "community": 24,
+      "norm_label": "0.5rem",
+      "id": "design_rounded-default"
+    },
+    {
+      "label": "0.75rem",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 97,
+      "community": 25,
+      "norm_label": "0.75rem",
+      "id": "design_rounded-md"
+    },
+    {
+      "label": "1rem",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 98,
+      "community": 26,
+      "norm_label": "1rem",
+      "id": "design_rounded-lg"
+    },
+    {
+      "label": "1.5rem",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 99,
+      "community": 27,
+      "norm_label": "1.5rem",
+      "id": "design_rounded-xl"
+    },
+    {
+      "label": "9999px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 100,
+      "community": 28,
+      "norm_label": "9999px",
+      "id": "design_rounded-full"
+    },
+    {
+      "label": "4px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 102,
+      "community": 29,
+      "norm_label": "4px",
+      "id": "design_spacing-unit"
+    },
+    {
+      "label": "4px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 103,
+      "community": 30,
+      "norm_label": "4px",
+      "id": "design_spacing-xs"
+    },
+    {
+      "label": "8px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 104,
+      "community": 31,
+      "norm_label": "8px",
+      "id": "design_spacing-sm"
+    },
+    {
+      "label": "16px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 105,
+      "community": 32,
+      "norm_label": "16px",
+      "id": "design_spacing-md"
+    },
+    {
+      "label": "24px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 106,
+      "community": 33,
+      "norm_label": "24px",
+      "id": "design_spacing-lg"
+    },
+    {
+      "label": "32px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 107,
+      "community": 34,
+      "norm_label": "32px",
+      "id": "design_spacing-xl"
+    },
+    {
+      "label": "48px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 108,
+      "community": 35,
+      "norm_label": "48px",
+      "id": "design_spacing-xxl"
+    },
+    {
+      "label": "96px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 109,
+      "community": 36,
+      "norm_label": "96px",
+      "id": "design_spacing-section-y"
+    },
+    {
+      "label": "24px",
+      "file_type": "code",
+      "source_file": "DESIGN.md",
+      "source_location": 110,
+      "community": 37,
+      "norm_label": "24px",
+      "id": "design_spacing-gutter"
+    },
+    {
+      "label": "Raehan Damai Putra (TheSmoothRere)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 1,
+      "community": 2,
+      "norm_label": "raehan damai putra (thesmoothrere)",
+      "id": "readme_raehan-damai-putra"
+    },
+    {
+      "label": "Full-Stack Web Developer",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 3,
+      "community": 2,
+      "norm_label": "full-stack web developer",
+      "id": "readme_full-stack-web-developer"
+    },
+    {
+      "label": "Minecraft Mod Developer",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 3,
+      "community": 2,
+      "norm_label": "minecraft mod developer",
+      "id": "readme_minecraft-mod-developer"
+    },
+    {
+      "label": "React",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 12,
+      "community": 2,
+      "norm_label": "react",
+      "id": "readme_react"
+    },
+    {
+      "label": "Next.js",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 12,
+      "community": 2,
+      "norm_label": "next.js",
+      "id": "readme_nextjs"
+    },
+    {
+      "label": "Astro",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 12,
+      "community": 2,
+      "norm_label": "astro",
+      "id": "readme_astro"
+    },
+    {
+      "label": "Spring Boot",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 13,
+      "community": 2,
+      "norm_label": "spring boot",
+      "id": "readme_spring-boot"
+    },
+    {
+      "label": "PostgreSQL",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 14,
+      "community": 2,
+      "norm_label": "postgresql",
+      "id": "readme_postgresql"
+    },
+    {
+      "label": "Redis",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 14,
+      "community": 2,
+      "norm_label": "redis",
+      "id": "readme_redis"
+    },
+    {
+      "label": "Docker",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 15,
+      "community": 2,
+      "norm_label": "docker",
+      "id": "readme_docker"
+    },
+    {
+      "label": "Linux",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 15,
+      "community": 2,
+      "norm_label": "linux",
+      "id": "readme_linux"
+    },
+    {
+      "label": "Fabric",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 19,
+      "community": 2,
+      "norm_label": "fabric",
+      "id": "readme_fabric"
+    },
+    {
+      "label": "100,000+ downloads",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": 20,
+      "community": 2,
+      "norm_label": "100,000+ downloads",
+      "id": "readme_100k-downloads"
+    },
+    {
+      "label": "Portfolio Logo (Favicon)",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "community": 0,
+      "norm_label": "portfolio logo (favicon)",
+      "id": "favicon_portfolio-logo"
+    },
+    {
+      "label": "Gradient O1 (Blue to Light Blue)",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": 3,
+      "community": 4,
+      "norm_label": "gradient o1 (blue to light blue)",
+      "id": "favicon_gradient-o1"
+    },
+    {
+      "label": "Gradient O2 (Light Blue to Cyan)",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": 7,
+      "community": 7,
+      "norm_label": "gradient o2 (light blue to cyan)",
+      "id": "favicon_gradient-o2"
+    },
+    {
+      "label": "Gradient O3 (Dark Blue to Light Blue)",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": 11,
+      "community": 4,
+      "norm_label": "gradient o3 (dark blue to light blue)",
+      "id": "favicon_gradient-o3"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_brand_style"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_colors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_typography"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_layout_spacing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_elevation_depth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_shapes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "design_md",
+      "target": "portfolio_design_components"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_buttons"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_cards_project_schematic"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_input_fields_tags"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_navigation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_design_components",
+      "target": "portfolio_design_skills_network"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "portfolio_readme_raehan_damai_putra_thesmoothrere"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_expertise"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_experience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_raehan_damai_putra_thesmoothrere",
+      "target": "portfolio_readme_journey"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_expertise",
+      "target": "portfolio_readme_full_stack_web_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_expertise",
+      "target": "portfolio_readme_minecraft_mod_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_readme_experience",
+      "target": "portfolio_readme_freelance_developer_2022_present"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "pnpm-workspace.yaml",
+      "source_location": 2,
+      "weight": 1.0,
+      "source": "pnpm-workspace_esbuild",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "pnpm-workspace.yaml",
+      "source_location": 3,
+      "weight": 1.0,
+      "source": "pnpm-workspace_sharp",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 116,
+      "weight": 1.0,
+      "source": "design_cyber-minimalist-portfolio",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "represents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "favicon_portfolio-logo",
+      "target": "design_cyber-minimalist-portfolio"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 117,
+      "weight": 1.0,
+      "source": "design_minimalist-cyberpunk",
+      "target": "design_obsidian-canvas"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 118,
+      "weight": 1.0,
+      "source": "design_minimalist-cyberpunk",
+      "target": "design_circuitry-metaphors"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 119,
+      "weight": 1.0,
+      "source": "design_minimalist-cyberpunk",
+      "target": "design_tactile-offsets"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 120,
+      "weight": 1.0,
+      "source": "design_minimalist-cyberpunk",
+      "target": "design_dual-mode-logic"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 125,
+      "weight": 1.0,
+      "source": "design_spring-green",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 126,
+      "weight": 1.0,
+      "source": "design_obsidian-blue",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 127,
+      "weight": 1.0,
+      "source": "design_amber-gold",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 128,
+      "weight": 1.0,
+      "source": "design_slate-gray",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 138,
+      "weight": 1.0,
+      "source": "design_hanken-grotesk",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 139,
+      "weight": 1.0,
+      "source": "design_inter",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 140,
+      "weight": 1.0,
+      "source": "design_jetbrains-mono",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 144,
+      "weight": 1.0,
+      "source": "design_spine-and-node",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 152,
+      "weight": 1.0,
+      "source": "design_luminance-layers",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 155,
+      "weight": 1.0,
+      "source": "design_glassmorphism",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 160,
+      "weight": 1.0,
+      "source": "design_geometric-shapes",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 170,
+      "weight": 1.0,
+      "source": "design_neon-outline-button",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 171,
+      "weight": 1.0,
+      "source": "design_print-pill",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 173,
+      "weight": 1.0,
+      "source": "design_project-schematic-card",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 186,
+      "weight": 1.0,
+      "source": "design_skills-network",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "README.md",
+      "source_location": 12,
+      "weight": 1.0,
+      "source": "readme_react",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "README.md",
+      "source_location": 12,
+      "weight": 1.0,
+      "source": "readme_nextjs",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "README.md",
+      "source_location": 12,
+      "weight": 1.0,
+      "source": "readme_astro",
+      "target": "design_minimalist-cyberpunk"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "DESIGN.md",
+      "source_location": 21,
+      "weight": 1.0,
+      "source": "design_color-primary-container",
+      "target": "design_spring-green"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "public/favicon.svg",
+      "source_location": 7,
+      "weight": 1.0,
+      "source": "favicon_gradient-o2",
+      "target": "design_spring-green"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "DESIGN.md",
+      "source_location": 4,
+      "weight": 1.0,
+      "source": "design_color-surface",
+      "target": "design_obsidian-blue"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "DESIGN.md",
+      "source_location": 5,
+      "weight": 1.0,
+      "source": "design_color-surface-dim",
+      "target": "design_obsidian-blue"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "DESIGN.md",
+      "source_location": 48,
+      "weight": 1.0,
+      "source": "design_color-background",
+      "target": "design_obsidian-blue"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "public/favicon.svg",
+      "source_location": 3,
+      "weight": 1.0,
+      "source": "favicon_gradient-o1",
+      "target": "design_obsidian-blue"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "public/favicon.svg",
+      "source_location": 11,
+      "weight": 1.0,
+      "source": "favicon_gradient-o3",
+      "target": "design_obsidian-blue"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 52,
+      "weight": 1.0,
+      "source": "design_typography-display-xl",
+      "target": "design_hanken-grotesk"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 58,
+      "weight": 1.0,
+      "source": "design_typography-display-xl-mobile",
+      "target": "design_hanken-grotesk"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 64,
+      "weight": 1.0,
+      "source": "design_typography-display-lg",
+      "target": "design_hanken-grotesk"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 70,
+      "weight": 1.0,
+      "source": "design_typography-headline-md",
+      "target": "design_hanken-grotesk"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 76,
+      "weight": 1.0,
+      "source": "design_typography-body-base",
+      "target": "design_inter"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 88,
+      "weight": 1.0,
+      "source": "design_typography-label-caps",
+      "target": "design_inter"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md",
+      "source_location": 82,
+      "weight": 1.0,
+      "source": "design_typography-label-mono",
+      "target": "design_jetbrains-mono"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 3,
+      "weight": 1.0,
+      "source": "readme_raehan-damai-putra",
+      "target": "readme_full-stack-web-developer"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 3,
+      "weight": 1.0,
+      "source": "readme_raehan-damai-putra",
+      "target": "readme_minecraft-mod-developer"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 12,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_react"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 12,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_nextjs"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 12,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_astro"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 13,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_spring-boot"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 14,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_postgresql"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 14,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_redis"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 15,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_docker"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 15,
+      "weight": 1.0,
+      "source": "readme_full-stack-web-developer",
+      "target": "readme_linux"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 19,
+      "weight": 1.0,
+      "source": "readme_minecraft-mod-developer",
+      "target": "readme_fabric"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": 20,
+      "weight": 1.0,
+      "source": "readme_minecraft-mod-developer",
+      "target": "readme_100k-downloads"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "design_system_components",
+      "label": "Design System Components",
+      "nodes": [
+        "design_neon-outline-button",
+        "design_print-pill",
+        "design_project-schematic-card",
+        "design_skills-network"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md"
+    },
+    {
+      "id": "typography_system",
+      "label": "Typography System",
+      "nodes": [
+        "design_typography-display-xl",
+        "design_typography-display-xl-mobile",
+        "design_typography-display-lg",
+        "design_typography-headline-md",
+        "design_typography-body-base",
+        "design_typography-label-mono",
+        "design_typography-label-caps"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md"
+    },
+    {
+      "id": "color_palette",
+      "label": "Color Palette",
+      "nodes": [
+        "design_color-surface",
+        "design_color-surface-dim",
+        "design_color-surface-bright",
+        "design_color-surface-container-lowest",
+        "design_color-surface-container-low",
+        "design_color-surface-container",
+        "design_color-surface-container-high",
+        "design_color-surface-container-highest",
+        "design_color-on-surface",
+        "design_color-on-surface-variant",
+        "design_color-primary",
+        "design_color-on-primary",
+        "design_color-primary-container",
+        "design_color-secondary",
+        "design_color-tertiary",
+        "design_color-error",
+        "design_color-background"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "DESIGN.md"
+    },
+    {
+      "id": "full_stack_technologies",
+      "label": "Full-Stack Technologies",
+      "nodes": [
+        "readme_react",
+        "readme_nextjs",
+        "readme_astro",
+        "readme_spring-boot",
+        "readme_postgresql",
+        "readme_redis",
+        "readme_docker",
+        "readme_linux"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    }
+  ],
+  "built_at_commit": "77ea4c1a0506c1b812575cfc3b69bdde01167c09"
+}

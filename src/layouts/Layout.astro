@@ -1,0 +1,87 @@
+---
+const SITE_URL = "https://thesmoothrere-portfolio.pages.dev";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  path?: string;
+}
+
+const {
+  title = "TheSmoothRere | Full-Stack Web Developer & Minecraft Mod Developer",
+  description = "Full-stack web developer and Minecraft mod developer with 100K+ mod downloads. I build scalable, high-performance web applications and Minecraft Fabric mods.",
+  image = "/favicon.svg",
+  path = "/",
+} = Astro.props;
+
+const canonical = new URL(path, SITE_URL).href;
+const ogImage = new URL(image, SITE_URL).href;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Raehan Damai Putra" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{title}</title>
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TheSmoothRere" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <meta name="robots" content="index, follow" />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Raehan Damai Putra",
+        alternateName: "TheSmoothRere",
+        url: SITE_URL,
+        image: ogImage,
+        jobTitle: "Full-Stack Web Developer & Minecraft Mod Developer",
+        sameAs: [
+          "https://github.com/TheSmoothRere",
+          "https://www.linkedin.com/in/raehan-damai-putra",
+          "https://x.com/thesmoothrere",
+        ],
+      })}
+    />
+
+    <meta
+      name="google-site-verification"
+      content="47JBk3FecA-yT3cGe5psL31fUFrOiL3AMCNpHqhmcJ0"
+    />
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body antialiased selection:bg-surface-tint/20"
+  >
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:px-4 focus:py-2 focus:bg-surface-tint focus:text-on-surface-tint focus:text-sm focus:font-mono focus:rounded-sm">
+      Skip to main content
+    </a>
+    <slot />
+  </body>
+</html>

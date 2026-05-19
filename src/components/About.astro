@@ -1,0 +1,56 @@
+---
+import SectionLabel from "./SectionLabel.astro";
+---
+
+<section id="about" class="py-section-y">
+  <div class="max-w-6xl mx-auto px-6">
+    <SectionLabel number="01" label="About" class="mb-8" />
+
+    <div class="grid md:grid-cols-5 gap-8 md:gap-12">
+      <div class="md:col-span-3">
+        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-display-lg font-display font-bold tracking-display text-on-surface leading-[1.1] mb-6 wrap-break-word">
+          From <span class="text-surface-tint">mods</span> to<br />
+          full-stack — building<br />
+          at every scale
+        </h3>
+        <div class="space-y-4 text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-xl">
+          <p>
+            My passion for development began with Minecraft modding in Java, where I learned the fundamentals of
+            coding and problem-solving. Over time, I transitioned into full-stack web development, building modern
+            applications with React, Next.js, TypeScript, and Spring Boot.
+          </p>
+          <p>
+            Today, I combine my technical expertise with a creative mindset to deliver impactful solutions —
+            from full-stack web applications using React, Next.js, Spring Boot, and REST APIs, to Minecraft mods
+            built with Fabric that have reached 100,000+ downloads. My backend experience includes PostgreSQL,
+            Redis, and Docker for scalable, containerized deployments.
+          </p>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+          <span class="node shrink-0"></span>
+          <div class="min-w-0">
+            <div class="text-lg font-semibold text-on-surface">100K+</div>
+            <div class="text-sm text-on-surface-variant font-mono tracking-label-mono">Mod Downloads</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+          <span class="node shrink-0"></span>
+          <div class="min-w-0">
+            <div class="text-lg font-semibold text-on-surface">2+</div>
+            <div class="text-sm text-on-surface-variant font-mono tracking-label-mono">Years Experience</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+          <span class="node shrink-0"></span>
+          <div class="min-w-0">
+            <div class="text-lg font-semibold text-on-surface">Full-Stack</div>
+            <div class="text-sm text-on-surface-variant font-mono tracking-label-mono">Web &amp; Modding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

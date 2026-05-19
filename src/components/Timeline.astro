@@ -1,0 +1,46 @@
+---
+import SectionLabel from "./SectionLabel.astro";
+
+const experiences = [
+  {
+    period: "2022 — Present",
+    role: "Freelance Developer",
+    company: "Self-Employed",
+    description: "Develop and maintain full-stack web applications, Minecraft mods, and other software using React, Next.js, and Spring Boot. Design and deploy RESTful APIs with PostgreSQL and Redis for optimized performance.",
+    tags: ["React", "Next.js", "Spring Boot", "PostgreSQL", "Redis", "Fabric", "Java"],
+  }
+];
+---
+
+<section id="experience" class="py-section-y">
+  <div class="max-w-6xl mx-auto px-6">
+    <SectionLabel number="02" label="Experience" class="mb-8" />
+
+    <div class="flex flex-col gap-0 relative pl-8 md:pl-12">
+      <div class="absolute left-3 md:left-[1.15rem] top-3 bottom-3 w-[2px] bg-surface-container-high"></div>
+
+      {experiences.map((exp) => (
+        <div class="relative pb-12 last:pb-0 group">
+          <div class="absolute left-[-1.65rem] md:left-[-1.85rem] top-1 w-3 h-3 rounded-full border-2 border-surface-tint bg-surface shadow-[0_0_12px] shadow-surface-tint/30 group-hover:shadow-surface-tint/60 transition-shadow duration-300 z-10"></div>
+
+          <div class="card-border-glow rounded px-6 py-5 bg-surface-container/30 transition-all duration-300">
+            <div class="flex items-center gap-3 text-xs font-mono tracking-label-mono text-on-surface-variant mb-3">
+              <span class="text-surface-tint">{exp.period}</span>
+              <span class="w-1 h-1 rounded-full bg-surface-container-highest"></span>
+              <span class="text-outline">{exp.company}</span>
+            </div>
+            <h3 class="text-headline-md font-display font-bold text-on-surface mb-3">{exp.role}</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed mb-4 max-w-2xl">{exp.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {exp.tags.map((tag) => (
+                <span class="text-[11px] font-mono tracking-label-caps uppercase px-2.5 py-1 rounded-sm bg-surface-container text-outline border border-surface-container-high">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+---
+import { CONTACT_LINKS } from "@/libs/constants";
+import { HugeiconsIcon } from "@hugeicons/react";
+---
+
+<footer class="border-t border-surface-container-high">
+  <div
+    class="max-w-6xl mx-auto px-6 py-6 md:py-8 flex flex-col items-center justify-between gap-6 md:gap-4"
+  >
+    <div class="flex flex-wrap items-center justify-center gap-2">
+      {
+        CONTACT_LINKS.map((link) => {
+          return (
+            <a
+              href={link.href} target="_blank"
+              class="px-3 py-2 text-xs font-mono flex flex-col items-center gap-2 tracking-label-caps text-on-surface-variant hover:text-surface-tint transition-colors rounded-sm hover:bg-surface-container/50"
+            >
+              <HugeiconsIcon icon={link.icon} size={18} />
+              <span class="sr-only">{link.name}</span>
+            </a>
+          );
+        })
+      }
+    </div>
+    <div class="flex flex-col items-center gap-2 text-center">
+      <div class="flex items-center justify-center md:justify-start gap-2">
+        <span
+          class="w-1.5 h-1.5 shrink-0 rounded-full bg-surface-tint shadow-[0_0_6px] shadow-surface-tint/60"
+        ></span>
+        <span
+          class="font-mono text-xs tracking-label-caps text-on-surface-variant"
+        >
+          &copy; {new Date().getFullYear()} — Designed &amp; built with precision
+        </span>
+      </div>
+      <span class="font-mono text-[10px] tracking-label-mono text-outline/60">
+        &lt;engineered_by <a
+          href="https://github.com/TheSmoothRere"
+          class="hover:text-surface-tint transition-colors">TheSmoothRere</a
+        > &sol;&gt;
+      </span>
+    </div>
+  </div>
+</footer>
