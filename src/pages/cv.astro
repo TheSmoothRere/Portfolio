@@ -1,7 +1,94 @@
 ---
 import "@/styles/global.css";
 import Layout from "@/layouts/Layout.astro";
-import CvContent from "@/components/CvContent";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  Mail01Icon,
+  TelephoneIcon,
+  Location01Icon,
+  GlobeIcon,
+  Linkedin01Icon,
+  GithubIcon,
+  BriefcaseIcon,
+  ArrowRight01Icon,
+  GraduationScrollIcon,
+  Medal01Icon,
+  StarIcon,
+  PrinterIcon,
+} from "@hugeicons/core-free-icons";
+
+const name = "Raehan Damai Putra";
+const title = "Full-Stack Developer & Open Source Contributor";
+
+const contact = [
+  { icon: Mail01Icon, value: "raehanputra1261@gmail.com" },
+  { icon: TelephoneIcon, value: "+62 851 71662112" },
+  { icon: Location01Icon, value: "Cirebon, West Java" },
+  { icon: GlobeIcon, value: "thesmoothrere-portfolio.pages.dev" },
+  { icon: Linkedin01Icon, value: "linkedin.com/in/raehan-damai-putra" },
+  { icon: GithubIcon, value: "github.com/TheSmoothRere" },
+];
+
+const summary =
+  "Result-driven Freelance Developer specialized in building scalable web applications and performance-optimized Java applications. Proven track record in open-source development, maintaining projects with 100k+ downloads. Expert in bridging the gap between complex backend logic and modern, responsive frontend interfaces.";
+
+interface Exp {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  bullets: string[];
+}
+
+const experiences: Exp[] = [
+  {
+    role: "Full-Stack Developer (Freelance)",
+    company: "Self-Employed",
+    period: "March 2024 - Present",
+    location: "Remote",
+    bullets: [
+      "Engineered high-performance Minecraft mods using Java, achieving 100,000+ unique downloads through community-driven feature updates and rigorous debugging.",
+      "Architected custom Discord automation bots for large-scale communities, optimizing API interactions to handle high-concurrency event listeners.",
+      "Developed and deployed responsive web using Next.js and Tailwind CSS.",
+    ],
+  },
+  {
+    role: "Administrative Operations",
+    company: "CV. Rejeki Dua Putra",
+    period: "April 2025 - July 2025",
+    location: "Cirebon, West Java",
+    bullets: [
+      "Streamlined digital communications and documentation workflows, reducing internal response times for incoming/outgoing correspondence.",
+      "Coordinated social media strategy and content distribution, enhancing the company's digital presence and professional brand image.",
+      "Maintained meticulous digital archives and records management to ensure 100% compliance with internal auditing standards.",
+    ],
+  },
+];
+
+const education = {
+  degree: "Vocational High School - Computer and Network Engineering",
+  institution: "SMK PGRI 1 Palimanan",
+  period: "2020 - 2023",
+  detail:
+    "Focused on Network Infrastructure, Systems Administration, and Hardware Troubleshooting.",
+};
+
+const skillGroups: Record<string, string[]> = {
+  Frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"],
+  Backend: ["Node.js", "Java (Forge/Fabric)", "Spring Boot", "REST APIs", "PostgreSQL", "Redis"],
+  "DevOps & Cloud": ["Docker", "CI/CD (GitHub Actions)", "Cloudflare", "Railway"],
+  Tools: ["Git", "Postman", "IntelliJ IDEA", "VS Code"],
+};
+
+const languages = [
+  { lang: "Indonesian", level: "Native", pct: 100 },
+  { lang: "English", level: "Professional Working", pct: 85 },
+];
+
+const achievements = [
+  "Lead Developer of open-source Minecraft projects with >100,000 global downloads.",
+  "Certified Computer & Network Technician (Vocational Competency).",
+];
 ---
 
 <Layout
@@ -10,21 +97,206 @@ import CvContent from "@/components/CvContent";
   image="/favicon.svg"
   path="/cv"
 >
-  <CvContent client:load />
+  <main id="main-content" class="min-h-screen bg-slate-100 py-10 px-4">
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+      <div class="bg-linear-to-r from-slate-800 to-slate-700 text-white px-10 py-12">
+        <div class="text-center sm:text-left">
+          <h1 class="text-4xl font-bold text-white mb-2">{name}</h1>
+          <p class="text-slate-300 text-xl mb-6 font-medium">{title}</p>
+          <div class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-3 text-slate-300 text-sm">
+            {contact.map((c) => (
+              <span class="flex items-center gap-2">
+                <span class="text-slate-400 shrink-0">
+                  <HugeiconsIcon icon={c.icon} size={18} />
+                </span>
+                <span class="cursor-default">{c.value}</span>
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row">
+        <div class="lg:w-2/3 px-8 py-8 space-y-8 border-r border-slate-100">
+          <section>
+            <div class="flex items-center gap-2 mb-5">
+              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+                Professional Summary
+              </h2>
+            </div>
+            <p class="text-slate-600 leading-relaxed text-sm">{summary}</p>
+          </section>
+
+          <section>
+            <div class="flex items-center gap-2 mb-5">
+              <span class="text-slate-700 shrink-0">
+                <HugeiconsIcon icon={BriefcaseIcon} size={20} />
+              </span>
+              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+                Work Experience
+              </h2>
+            </div>
+            <div class="space-y-8">
+              {experiences.map((exp) => (
+                <div class="relative pl-6 border-l-2 border-slate-200">
+                  <div class="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-slate-700 border-2 border-white shadow" />
+                  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">
+                    <div>
+                      <h3 class="text-slate-800 font-bold text-base">{exp.role}</h3>
+                      <p class="text-slate-500 text-sm font-medium">
+                        {exp.company} — {exp.location}
+                      </p>
+                    </div>
+                    <span class="text-xs bg-slate-100 text-slate-600 font-semibold px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-center">
+                      {exp.period}
+                    </span>
+                  </div>
+                  <ul class="space-y-2">
+                    {exp.bullets.map((b) => (
+                      <li class="flex gap-2 text-sm text-slate-600 leading-snug">
+                        <span class="mt-1 text-slate-400 shrink-0">
+                          <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
+                        </span>
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <div class="flex items-center gap-2 mb-5">
+              <span class="text-slate-700 shrink-0">
+                <HugeiconsIcon icon={GraduationScrollIcon} size={20} />
+              </span>
+              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+                Education
+              </h2>
+            </div>
+            <div class="space-y-6">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <h3 class="text-slate-800 font-bold">{education.degree}</h3>
+                  <p class="text-slate-500 text-sm">{education.institution}</p>
+                  <p class="text-slate-400 text-xs mt-0.5">{education.detail}</p>
+                </div>
+                <span class="text-xs bg-slate-100 text-slate-500 px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-center">
+                  {education.period}
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="flex items-center gap-2 mb-5">
+              <span class="text-slate-700 shrink-0">
+                <HugeiconsIcon icon={Medal01Icon} size={20} />
+              </span>
+              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+                Achievements
+              </h2>
+            </div>
+            <ul class="grid grid-cols-1 gap-3">
+              {achievements.map((a) => (
+                <li class="flex gap-3 text-sm text-slate-600 items-start">
+                  <span class="text-amber-400 shrink-0 mt-0.5">
+                    <HugeiconsIcon icon={StarIcon} size={18} />
+                  </span>
+                  <span>{a}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </div>
+
+        <div class="lg:w-1/3 bg-slate-50 px-7 py-8 space-y-8">
+          <section>
+            <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+              Technical Skills
+            </h2>
+            <div class="mt-5 space-y-5">
+              {Object.entries(skillGroups).map(([category, items]) => (
+                <div>
+                  <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">
+                    {category}
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    {items.map((skill) => (
+                      <span class="text-xs bg-slate-700 text-white px-2.5 py-1 rounded-md font-medium">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+              Languages
+            </h2>
+            <div class="mt-5 space-y-4">
+              {languages.map((l) => (
+                <div>
+                  <div class="flex justify-between text-sm mb-1.5">
+                    <span class="text-slate-700 font-medium">{l.lang}</span>
+                    <span class="text-slate-400 text-xs">{l.level}</span>
+                  </div>
+                  <div class="h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-slate-700 rounded-full"
+                      style={`width: ${l.pct}%`}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div class="pt-6">
+            <button
+              id="print-cv"
+              class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-black text-white text-sm font-bold py-3 px-4 rounded-xl transition-all shadow-lg active:scale-95 cursor-pointer"
+            >
+              <HugeiconsIcon icon={PrinterIcon} size={20} />
+              Download / Print CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("print-cv")?.addEventListener("click", () => window.print());
+  </script>
 </Layout>
 
 <style is:global>
   @media print {
-    @page {
-      margin: 0;
-    }
-
+    @page { margin: 0; }
     body {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
+      background: white !important;
     }
-
-    nav, #nav, .fixed, header:has(nav) {
+    nav, #nav, header:has(nav), footer, #menu-toggle, #mobile-menu, .fixed {
+      display: none !important;
+    }
+    #main-content {
+      padding: 0 !important;
+      background: white !important;
+      min-height: auto !important;
+    }
+    #main-content > div {
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      max-width: 100% !important;
+    }
+    #print-cv {
       display: none !important;
     }
   }
