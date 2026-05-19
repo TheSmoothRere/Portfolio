@@ -51,23 +51,37 @@ import SectionLabel from "./SectionLabel.astro";
       </div>
 
       <div class="card-border-glow rounded p-8 bg-surface-container/20">
-        <form action="#" class="flex flex-col gap-5">
+        <form id="contact-form" class="flex flex-col gap-5">
           <div>
             <label for="name" class="block text-xs font-mono tracking-label-caps uppercase text-on-surface-variant mb-2">Name</label>
-            <input id="name" type="text" class="w-full bg-surface border-b-2 border-surface-container-high px-3 py-2.5 text-sm text-on-surface outline-none focus:border-surface-tint transition-colors duration-300 font-body" placeholder="Your name" />
+            <input id="name" name="name" type="text" class="w-full bg-surface border-b-2 border-surface-container-high px-3 py-2.5 text-sm text-on-surface outline-none focus:border-surface-tint transition-colors duration-300 font-body" placeholder="Your name" required />
           </div>
           <div>
             <label for="email" class="block text-xs font-mono tracking-label-caps uppercase text-on-surface-variant mb-2">Email</label>
-            <input id="email" type="email" class="w-full bg-surface border-b-2 border-surface-container-high px-3 py-2.5 text-sm text-on-surface outline-none focus:border-surface-tint transition-colors duration-300 font-body" placeholder="your@email.com" />
+            <input id="email" name="email" type="email" class="w-full bg-surface border-b-2 border-surface-container-high px-3 py-2.5 text-sm text-on-surface outline-none focus:border-surface-tint transition-colors duration-300 font-body" placeholder="your@email.com" required />
           </div>
           <div>
             <label for="message" class="block text-xs font-mono tracking-label-caps uppercase text-on-surface-variant mb-2">Message</label>
-            <textarea id="message" rows="4" class="w-full bg-surface border-b-2 border-surface-container-high px-3 py-2.5 text-sm text-on-surface outline-none focus:border-surface-tint transition-colors duration-300 font-body resize-none" placeholder="Tell me about your project..."></textarea>
+            <textarea id="message" name="message" rows="4" class="w-full bg-surface border-b-2 border-surface-container-high px-3 py-2.5 text-sm text-on-surface outline-none focus:border-surface-tint transition-colors duration-300 font-body resize-none" placeholder="Tell me about your project..." required></textarea>
           </div>
           <button type="submit" class="self-start text-sm font-mono tracking-label-caps uppercase px-6 py-3 btn-outline rounded-none transition-all duration-200">
             Send Message
           </button>
         </form>
+        <script>
+          document.getElementById("contact-form")?.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = (document.getElementById("name") as HTMLInputElement)?.value?.trim();
+            const email = (document.getElementById("email") as HTMLInputElement)?.value?.trim();
+            const message = (document.getElementById("message") as HTMLInputElement)?.value?.trim();
+            if (!name || !email || !message) return;
+            const subject = encodeURIComponent(`New inquiry from ${name}`);
+            const body = encodeURIComponent(
+              `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+            );
+            window.location.href = `mailto:thesmoothrere@gmail.com?subject=${subject}&body=${body}`;
+          });
+        </script>
       </div>
     </div>
   </div>
