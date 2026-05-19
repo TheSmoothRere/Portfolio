@@ -1,0 +1,302 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import SectionLabel from "@/components/SectionLabel.astro";
+
+const name = "Raehan Damai Putra";
+const title = "Full-Stack Developer & Open Source Contributor";
+
+const contact = [
+  { label: "Email", value: "raehanputra1261@gmail.com", href: "mailto:raehanputra1261@gmail.com" },
+  { label: "Phone", value: "+62 851 71662112", href: "tel:+6285171662112" },
+  { label: "Location", value: "Cirebon, West Java" },
+  { label: "Website", value: "thesmoothrere-portfolio.pages.dev", href: "https://thesmoothrere-portfolio.pages.dev" },
+  { label: "LinkedIn", value: "linkedin.com/in/raehan-damai-putra", href: "https://linkedin.com/in/raehan-damai-putra" },
+  { label: "GitHub", value: "github.com/TheSmoothRere", href: "https://github.com/TheSmoothRere" },
+];
+
+const experiences = [
+  {
+    period: "March 2024 — Present",
+    role: "Full-Stack Developer (Freelance)",
+    company: "Self-Employed — Remote",
+    highlights: [
+      "Engineered high-performance Minecraft mods using Java, achieving 100,000+ unique downloads through community-driven feature updates and rigorous debugging.",
+      "Architected custom Discord automation bots for large-scale communities, optimizing API interactions to handle high-concurrency event listeners.",
+      "Developed and deployed responsive web using Next.js and Tailwind CSS.",
+    ],
+  },
+  {
+    period: "April 2025 — July 2025",
+    role: "Administrative Operations",
+    company: "CV. Rejeki Dua Putra — Cirebon, West Java",
+    highlights: [
+      "Streamlined digital communications and documentation workflows, reducing internal response times for incoming/outgoing correspondence.",
+      "Coordinated social media strategy and content distribution, enhancing the company's digital presence and professional brand image.",
+      "Maintained meticulous digital archives and records management to ensure 100% compliance with internal auditing standards.",
+    ],
+  },
+];
+
+const education = {
+  school: "SMK PGRI 1 Palimanan",
+  degree: "Vocational High School - Computer and Network Engineering",
+  period: "2020 — 2023",
+  description: "Focused on Network Infrastructure, Systems Administration, and Hardware Troubleshooting.",
+  achievement: "Certified Computer & Network Technician (Vocational Competency)",
+};
+
+const achievements = [
+  "Lead Developer of open-source Minecraft projects with >100,000 global downloads.",
+  "Certified Computer & Network Technician (Vocational Competency).",
+];
+
+const skillGroups = [
+  { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"] },
+  { category: "Backend", items: ["Node.js", "Java (Forge/Fabric)", "Spring Boot", "REST APIs", "PostgreSQL", "Redis"] },
+  { category: "DevOps & Cloud", items: ["Docker", "CI/CD (GitHub Actions)", "Cloudflare", "Railway"] },
+  { category: "Tools", items: ["Git", "Postman", "IntelliJ IDEA", "VS Code"] },
+];
+
+const languages = [
+  { name: "Indonesian", level: "Native" },
+  { name: "English", level: "Professional Working" },
+];
+---
+
+<Layout
+  title="CV — Raehan Damai Putra | Full-Stack Developer & Open Source Contributor"
+  description="Professional CV of Raehan Damai Putra — Full-Stack Developer & Open Source Contributor"
+  image="/favicon.svg"
+  path="/cv"
+>
+  <main id="main-content" class="py-section-y">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-4xl">
+        <h1 class="text-display-lg font-display font-bold text-on-surface leading-[1.1]">
+          <span class="text-surface-tint">&gt;</span> {name}
+        </h1>
+        <p class="text-xl text-surface-tint font-mono tracking-label-mono mt-2 mb-10">
+          {title}
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-14">
+          {contact.map((c) => (
+            c.href ? (
+              <a
+                href={c.href}
+                class="flex items-center gap-2.5 px-4 py-3 rounded bg-surface-container/60 border border-surface-container-high text-sm font-mono tracking-label-mono text-on-surface-variant hover:text-surface-tint hover:border-surface-tint/40 transition-all duration-200"
+              >
+                <span class="w-1.5 h-1.5 rounded-full bg-surface-tint/60 shrink-0"></span>
+                {c.value}
+              </a>
+            ) : (
+              <span class="flex items-center gap-2.5 px-4 py-3 rounded bg-surface-container/60 border border-surface-container-high text-sm font-mono tracking-label-mono text-on-surface-variant">
+                <span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest shrink-0"></span>
+                {c.value}
+              </span>
+            )
+          ))}
+        </div>
+
+        <section class="mb-14">
+          <SectionLabel number="01" label="Professional Summary" class="mb-6" />
+          <p class="text-base text-on-surface-variant leading-relaxed max-w-3xl">
+            Result-driven Freelance Developer specialized in building scalable web applications and performance-optimized Java applications. Proven track record in open-source development, maintaining projects with 100k+ downloads. Expert in bridging the gap between complex backend logic and modern, responsive frontend interfaces.
+          </p>
+        </section>
+
+        <section class="mb-14">
+          <SectionLabel number="02" label="Work Experience" class="mb-6" />
+
+          <div class="flex flex-col gap-6">
+            {experiences.map((exp) => (
+              <div class="card-border-glow rounded px-6 py-5 bg-surface-container/30">
+                <div class="flex items-center gap-3 text-xs font-mono tracking-label-mono text-on-surface-variant mb-3">
+                  <span class="text-surface-tint">{exp.period}</span>
+                  <span class="w-1 h-1 rounded-full bg-surface-container-highest"></span>
+                  <span class="text-outline">{exp.company}</span>
+                </div>
+                <h3 class="text-headline-md font-display font-bold text-on-surface mb-3">{exp.role}</h3>
+                <ul class="list-disc list-outside pl-5 space-y-2 text-sm text-on-surface-variant leading-relaxed max-w-3xl">
+                  {exp.highlights.map((h) => (
+                    <li>{h}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="mb-14">
+          <SectionLabel number="03" label="Education" class="mb-6" />
+          <div class="card-border-glow rounded px-6 py-5 bg-surface-container/30">
+            <div class="flex items-center gap-3 text-xs font-mono tracking-label-mono text-on-surface-variant mb-3">
+              <span class="text-surface-tint">{education.period}</span>
+              <span class="w-1 h-1 rounded-full bg-surface-container-highest"></span>
+              <span class="text-outline">{education.school}</span>
+            </div>
+            <h3 class="text-headline-md font-display font-bold text-on-surface mb-3">{education.degree}</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed mb-3">{education.description}</p>
+            <div class="flex items-center gap-2 text-sm font-mono tracking-label-mono text-surface-tint">
+              <span class="w-1.5 h-1.5 rounded-full bg-surface-tint/60 shrink-0"></span>
+              {education.achievement}
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-14">
+          <SectionLabel number="04" label="Achievements" class="mb-6" />
+          <ul class="space-y-3">
+            {achievements.map((a) => (
+              <li class="flex items-start gap-3 px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+                <span class="node mt-0.5 shrink-0"></span>
+                <span class="text-sm text-on-surface-variant leading-relaxed">{a}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section class="mb-14">
+          <SectionLabel number="05" label="Technical Skills" class="mb-6" />
+          <div class="grid sm:grid-cols-2 gap-x-12 gap-y-8">
+            {skillGroups.map((group) => (
+              <div>
+                <h3 class="flex items-center gap-3 font-mono text-xs tracking-label-caps uppercase text-on-surface-variant mb-4">
+                  <span class="w-2 h-2 rounded-full bg-surface-tint shadow-[0_0_8px] shadow-surface-tint/40"></span>
+                  {group.category}
+                </h3>
+                <ul class="flex flex-wrap gap-2">
+                  {group.items.map((skill) => (
+                    <li class="text-[11px] font-mono tracking-label-caps uppercase px-2.5 py-1.5 rounded-sm bg-surface-container text-outline border border-surface-container-high">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="mb-14">
+          <SectionLabel number="06" label="Languages" class="mb-6" />
+          <div class="grid sm:grid-cols-2 gap-3">
+            {languages.map((lang) => (
+              <div class="flex items-center justify-between px-5 py-4 rounded bg-surface-container/60 border border-surface-container-high">
+                <span class="text-sm font-mono tracking-label-mono text-on-surface">{lang.name}</span>
+                <span class="text-xs font-mono tracking-label-caps uppercase text-surface-tint">{lang.level}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div class="flex flex-wrap gap-4 pt-4 border-t border-surface-container-high">
+          <a
+            href="/CV-Raehan-Damai-Putra.pdf"
+            download
+            class="inline-flex items-center gap-2 text-sm font-mono tracking-label-caps uppercase px-5 py-3 btn-outline rounded-none transition-all duration-200"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            Download PDF
+          </a>
+          <button
+            onclick="window.print()"
+            class="inline-flex items-center gap-2 text-sm font-mono tracking-label-caps uppercase px-5 py-3 btn-outline rounded-none transition-all duration-200 cursor-pointer"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6v-8z" />
+            </svg>
+            Print
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style is:global>
+  @media print {
+    @page {
+      margin: 0.75in;
+    }
+
+    body {
+      background: #fff !important;
+      color: #000 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    nav, footer, #nav, .fixed, [class*="fixed"] {
+      display: none !important;
+    }
+
+    #main-content {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .bg-surface, .bg-surface-container, .bg-surface-container\/30,
+    .bg-surface-container\/60, .bg-surface-container\/20 {
+      background: #fff !important;
+    }
+
+    .text-on-surface, .text-on-surface-variant, .text-outline {
+      color: #000 !important;
+    }
+
+    .text-surface-tint {
+      color: #006d41 !important;
+    }
+
+    .border-surface-container-high, .border-surface-container-highest {
+      border-color: #ccc !important;
+    }
+
+    .card-border-glow, .card-border-glow:hover {
+      border-color: #ddd !important;
+      box-shadow: none !important;
+    }
+
+    .btn-outline, button, [class*="btn-"] {
+      display: none !important;
+    }
+
+    a {
+      color: #000 !important;
+      text-decoration: underline !important;
+    }
+
+    h1, h2, h3, h4 {
+      color: #000 !important;
+    }
+
+    ul {
+      list-style: disc !important;
+    }
+
+    .max-w-6xl {
+      max-width: 100% !important;
+    }
+
+    .max-w-4xl {
+      max-width: 100% !important;
+    }
+
+    .px-6 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .py-section-y {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .mb-14, .mb-12, .mb-10, .mb-8, .mb-6, .mb-4, .mb-3 {
+      margin-bottom: 16px !important;
+    }
+  }
+</style>
