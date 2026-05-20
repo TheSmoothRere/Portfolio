@@ -18,7 +18,7 @@ import {
 } from "@hugeicons/core-free-icons";
 
 const name = "Raehan Damai Putra";
-const title = "Full-Stack Developer & Open Source Contributor";
+const title = "Technical Operations & Administrative Professional";
 
 const contact = [
   { icon: Mail01Icon, value: "raehanputra1261@gmail.com" },
@@ -30,7 +30,7 @@ const contact = [
 ];
 
 const summary =
-  "Result-driven Freelance Developer specialized in building scalable web applications and performance-optimized Java applications. Proven track record in open-source development, maintaining projects with 100k+ downloads. Expert in bridging the gap between complex backend logic and modern, responsive frontend interfaces.";
+  "Versatile professional with a strong foundation in both technical development and administrative operations. Proven track record in building scalable software solutions while simultaneously optimizing organizational workflows and digital communications. Adept at bridging the gap between complex technical requirements and efficient operational management to drive productivity and results.";
 
 interface Exp {
   role: string;
@@ -74,10 +74,20 @@ const education = {
 };
 
 const skillGroups: Record<string, string[]> = {
-  Frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"],
-  Backend: ["Node.js", "Java (Forge/Fabric)", "Spring Boot", "REST APIs", "PostgreSQL", "Redis"],
-  "DevOps & Cloud": ["Docker", "CI/CD (GitHub Actions)", "Cloudflare", "Railway"],
-  Tools: ["Git", "Postman", "IntelliJ IDEA", "VS Code"],
+  "Hard Skills": [
+    "Programming",
+    "Digital Documentation",
+    "Records Management",
+    "CI/CD",
+    "Network Infrastructure",
+    "Microsoft Office",
+  ],
+  "Soft Skills": [
+    "Teamwork",
+    "Communication",
+    "Problem Solving",
+    "Time Management",
+  ],
 };
 
 const languages = [
@@ -92,26 +102,34 @@ const achievements = [
 ---
 
 <Layout
-  title="CV — Raehan Damai Putra | Full-Stack Developer & Open Source Contributor"
-  description="Professional CV of Raehan Damai Putra — Full-Stack Developer & Open Source Contributor"
+  title={`CV — ${name} | ${title}`}
+  description={`Professional CV of ${name} — ${title}`}
   image="/favicon.svg"
   path="/cv"
 >
   <main id="main-content" class="min-h-screen bg-slate-100 py-10 px-4">
-    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
-      <div class="bg-linear-to-r from-slate-800 to-slate-700 text-white px-10 py-12">
+    <div
+      class="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden"
+    >
+      <div
+        class="bg-linear-to-r from-slate-800 to-slate-700 text-white px-10 py-12"
+      >
         <div class="text-center sm:text-left">
           <h1 class="text-4xl font-bold text-white mb-2">{name}</h1>
           <p class="text-slate-300 text-xl mb-6 font-medium">{title}</p>
-          <div class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-3 text-slate-300 text-sm">
-            {contact.map((c) => (
-              <span class="flex items-center gap-2">
-                <span class="text-slate-400 shrink-0">
-                  <HugeiconsIcon icon={c.icon} size={18} />
+          <div
+            class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-3 text-slate-300 text-sm"
+          >
+            {
+              contact.map((c) => (
+                <span class="flex items-center gap-2">
+                  <span class="text-slate-400 shrink-0">
+                    <HugeiconsIcon icon={c.icon} size={18} />
+                  </span>
+                  <span class="cursor-default">{c.value}</span>
                 </span>
-                <span class="cursor-default">{c.value}</span>
-              </span>
-            ))}
+              ))
+            }
           </div>
         </div>
       </div>
@@ -120,7 +138,9 @@ const achievements = [
         <div class="lg:w-2/3 px-8 py-8 space-y-8 border-r border-slate-100">
           <section>
             <div class="flex items-center gap-2 mb-5">
-              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+              <h2
+                class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full"
+              >
                 Professional Summary
               </h2>
             </div>
@@ -132,37 +152,43 @@ const achievements = [
               <span class="text-slate-700 shrink-0">
                 <HugeiconsIcon icon={BriefcaseIcon} size={20} />
               </span>
-              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+              <h2
+                class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full"
+              >
                 Work Experience
               </h2>
             </div>
             <div class="space-y-8">
-              {experiences.map((exp) => (
-                <div class="relative pl-6 border-l-2 border-slate-200">
-                  <div class="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-slate-700 border-2 border-white shadow" />
-                  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">
-                    <div>
-                      <h3 class="text-slate-800 font-bold text-base">{exp.role}</h3>
-                      <p class="text-slate-500 text-sm font-medium">
-                        {exp.company} — {exp.location}
-                      </p>
+              {
+                experiences.map((exp) => (
+                  <div class="relative pl-6 border-l-2 border-slate-200">
+                    <div class="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-slate-700 border-2 border-white shadow" />
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">
+                      <div>
+                        <h3 class="text-slate-800 font-bold text-base">
+                          {exp.role}
+                        </h3>
+                        <p class="text-slate-500 text-sm font-medium">
+                          {exp.company} — {exp.location}
+                        </p>
+                      </div>
+                      <span class="text-xs bg-slate-100 text-slate-600 font-semibold px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-center">
+                        {exp.period}
+                      </span>
                     </div>
-                    <span class="text-xs bg-slate-100 text-slate-600 font-semibold px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-center">
-                      {exp.period}
-                    </span>
+                    <ul class="space-y-2">
+                      {exp.bullets.map((b) => (
+                        <li class="flex gap-2 text-sm text-slate-600 leading-snug">
+                          <span class="mt-1 text-slate-400 shrink-0">
+                            <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
+                          </span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <ul class="space-y-2">
-                    {exp.bullets.map((b) => (
-                      <li class="flex gap-2 text-sm text-slate-600 leading-snug">
-                        <span class="mt-1 text-slate-400 shrink-0">
-                          <HugeiconsIcon icon={ArrowRight01Icon} size={14} />
-                        </span>
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                ))
+              }
             </div>
           </section>
 
@@ -171,18 +197,26 @@ const achievements = [
               <span class="text-slate-700 shrink-0">
                 <HugeiconsIcon icon={GraduationScrollIcon} size={20} />
               </span>
-              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+              <h2
+                class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full"
+              >
                 Education
               </h2>
             </div>
             <div class="space-y-6">
-              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
                 <div>
                   <h3 class="text-slate-800 font-bold">{education.degree}</h3>
                   <p class="text-slate-500 text-sm">{education.institution}</p>
-                  <p class="text-slate-400 text-xs mt-0.5">{education.detail}</p>
+                  <p class="text-slate-400 text-xs mt-0.5">
+                    {education.detail}
+                  </p>
                 </div>
-                <span class="text-xs bg-slate-100 text-slate-500 px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-center">
+                <span
+                  class="text-xs bg-slate-100 text-slate-500 px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-center"
+                >
                   {education.period}
                 </span>
               </div>
@@ -194,65 +228,77 @@ const achievements = [
               <span class="text-slate-700 shrink-0">
                 <HugeiconsIcon icon={Medal01Icon} size={20} />
               </span>
-              <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+              <h2
+                class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full"
+              >
                 Achievements
               </h2>
             </div>
             <ul class="grid grid-cols-1 gap-3">
-              {achievements.map((a) => (
-                <li class="flex gap-3 text-sm text-slate-600 items-start">
-                  <span class="text-amber-400 shrink-0 mt-0.5">
-                    <HugeiconsIcon icon={StarIcon} size={18} />
-                  </span>
-                  <span>{a}</span>
-                </li>
-              ))}
+              {
+                achievements.map((a) => (
+                  <li class="flex gap-3 text-sm text-slate-600 items-start">
+                    <span class="text-amber-400 shrink-0 mt-0.5">
+                      <HugeiconsIcon icon={StarIcon} size={18} />
+                    </span>
+                    <span>{a}</span>
+                  </li>
+                ))
+              }
             </ul>
           </section>
         </div>
 
         <div class="lg:w-1/3 bg-slate-50 px-7 py-8 space-y-8">
           <section>
-            <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
-              Technical Skills
+            <h2
+              class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full"
+            >
+              Skills & Expertise
             </h2>
             <div class="mt-5 space-y-5">
-              {Object.entries(skillGroups).map(([category, items]) => (
-                <div>
-                  <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">
-                    {category}
-                  </p>
-                  <div class="flex flex-wrap gap-2">
-                    {items.map((skill) => (
-                      <span class="text-xs bg-slate-700 text-white px-2.5 py-1 rounded-md font-medium">
-                        {skill}
-                      </span>
-                    ))}
+              {
+                Object.entries(skillGroups).map(([category, items]) => (
+                  <div>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">
+                      {category}
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                      {items.map((skill) => (
+                        <span class="text-xs bg-slate-700 text-white px-2.5 py-1 rounded-md font-medium">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))
+              }
             </div>
           </section>
 
           <section>
-            <h2 class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full">
+            <h2
+              class="text-slate-800 font-bold uppercase tracking-label-caps text-[11px] border-b-2 border-slate-100 pb-1 w-full"
+            >
               Languages
             </h2>
             <div class="mt-5 space-y-4">
-              {languages.map((l) => (
-                <div>
-                  <div class="flex justify-between text-sm mb-1.5">
-                    <span class="text-slate-700 font-medium">{l.lang}</span>
-                    <span class="text-slate-400 text-xs">{l.level}</span>
+              {
+                languages.map((l) => (
+                  <div>
+                    <div class="flex justify-between text-sm mb-1.5">
+                      <span class="text-slate-700 font-medium">{l.lang}</span>
+                      <span class="text-slate-400 text-xs">{l.level}</span>
+                    </div>
+                    <div class="h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                      <div
+                        class="h-full bg-slate-700 rounded-full"
+                        style={`width: ${l.pct}%`}
+                      />
+                    </div>
                   </div>
-                  <div class="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                    <div
-                      class="h-full bg-slate-700 rounded-full"
-                      style={`width: ${l.pct}%`}
-                    ></div>
-                  </div>
-                </div>
-              ))}
+                ))
+              }
             </div>
           </section>
 
@@ -271,19 +317,29 @@ const achievements = [
   </main>
 
   <script>
-    document.getElementById("print-cv")?.addEventListener("click", () => window.print());
+    document
+      .getElementById("print-cv")
+      ?.addEventListener("click", () => window.print());
   </script>
 </Layout>
 
 <style is:global>
   @media print {
-    @page { margin: 0; }
+    @page {
+      margin: 0;
+    }
     body {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
       background: white !important;
     }
-    nav, #nav, header:has(nav), footer, #menu-toggle, #mobile-menu, .fixed {
+    nav,
+    #nav,
+    header:has(nav),
+    footer,
+    #menu-toggle,
+    #mobile-menu,
+    .fixed {
       display: none !important;
     }
     #main-content {
