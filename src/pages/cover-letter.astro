@@ -8,17 +8,63 @@ const name = "Raehan Damai Putra";
 const title = "Cover Letter";
 
 const today = new Date();
-const formattedDateID = new Intl.DateTimeFormat('id-ID', {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric'
-}).format(today);
+const dateID = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }).format(today);
+const dateEN = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', year: 'numeric' }).format(today);
 
-const formattedDateEN = new Intl.DateTimeFormat('en-US', {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric'
-}).format(today);
+const coverLetter = {
+  id: {
+    recipient: ["Kepada Yth.", "Bapak/Ibu HRD / Pimpinan Perusahaan", "Di Tempat"],
+    date: `Cirebon, ${dateID}`,
+    greeting: "Dengan hormat,",
+    body: [
+      "Melalui surat ini, saya bermaksud untuk mengajukan diri guna bergabung dan berkontribusi di perusahaan yang Bapak/Ibu pimpin. Saya memiliki ketertarikan yang besar untuk membawa nilai tambah serta berkembang bersama tim profesional di perusahaan Bapak/Ibu.",
+      "Saya adalah pribadi yang berorientasi pada hasil dengan kombinasi kemampuan teknis, analitis, dan manajerial yang solid. Saya memiliki rekam jejak dalam mengelola tanggung jawab secara mandiri maupun kolaboratif yang telah memberikan dampak nyata. Pengalaman saya dalam menghadapi tantangan kompleks, melakukan analisis masalah, serta mencari solusi yang efisien telah membentuk saya menjadi individu yang disiplin, detail, dan berkomitmen tinggi terhadap kualitas hasil kerja.",
+      "Selain itu, saya memiliki kemampuan adaptasi yang tinggi terhadap lingkungan baru dan cepat dalam menguasai sistem maupun prosedur kerja yang diterapkan perusahaan. Saya juga fasih berkomunikasi dalam bahasa Indonesia dan Inggris tingkat profesional, yang memungkinkan saya untuk berinteraksi secara efektif dengan berbagai pihak di berbagai level organisasi.",
+    ],
+    qualifications: {
+      intro: "Sebagai bahan pertimbangan Bapak/Ibu, berikut adalah kualifikasi utama yang saya miliki:",
+      items: [
+        { title: "Orientasi pada Hasil & Kualitas", desc: "Terbiasa bekerja dengan target dan memastikan setiap tanggung jawab diselesaikan dengan standar kualitas terbaik." },
+        { title: "Kemampuan Analitis & Problem Solving", desc: "Mampu menganalisis situasi kompleks untuk menemukan solusi yang paling efektif dan efisien." },
+        { title: "Adaptabilitas & Pembelajaran Cepat", desc: "Kemampuan belajar yang tinggi terhadap teknologi, perangkat lunak, maupun alur kerja baru guna mendukung efektivitas operasional." },
+        { title: "Komunikasi & Kolaborasi", desc: "Mampu bekerja sama dalam tim maupun secara mandiri dengan koordinasi yang baik untuk mencapai tujuan bersama." },
+      ],
+    },
+    closing: [
+      "Bersama surat ini, saya lampirkan Daftar Riwayat Hidup (CV) serta dokumen pendukung lainnya yang memberikan gambaran lebih mendalam mengenai kualifikasi dan potensi yang saya miliki.",
+      "Besar harapan saya untuk diberikan kesempatan menghadiri sesi wawancara, agar saya dapat menjelaskan lebih lanjut mengenai bagaimana latar belakang dan kemampuan saya dapat memberikan kontribusi nyata bagi kemajuan perusahaan Bapak/Ibu.",
+      "Demikian surat lamaran ini saya sampaikan. Atas perhatian dan kesempatan yang Bapak/Ibu berikan, saya ucapkan terima kasih.",
+    ],
+    signoff: "Hormat saya,",
+  },
+  en: {
+    recipient: ["To whom it may concern,", "HRD Manager / Company Director"],
+    date: `Cirebon, ${dateEN}`,
+    greeting: "Dear Sir/Madam,",
+    body: [
+      "Through this letter, I intend to submit my application to join and contribute to the company you lead. I have a strong interest in bringing added value and growing together with the professional team at your company.",
+      "I am a results-oriented individual with a solid combination of technical, analytical, and managerial skills. I have a proven track record of managing responsibilities both independently and collaboratively, delivering tangible impact. My experience in handling complex challenges, conducting problem analysis, and finding efficient solutions has shaped me into a disciplined, detail-oriented person with a high commitment to quality output.",
+      "Furthermore, I have a high adaptability to new environments and can quickly master systems and work procedures implemented by the company. I am fluent in both Indonesian and English at a professional level, enabling me to communicate effectively with various parties across different organizational levels.",
+    ],
+    qualifications: {
+      intro: "For your consideration, here are my key qualifications:",
+      items: [
+        { title: "Results & Quality Orientation", desc: "Accustomed to working with targets and ensuring every responsibility is completed to the highest quality standards." },
+        { title: "Analytical & Problem-Solving Skills", desc: "Able to analyze complex situations to find the most effective and efficient solutions." },
+        { title: "Adaptability & Fast Learning", desc: "High learning ability for new technologies, software, and workflows to support operational effectiveness." },
+        { title: "Communication & Collaboration", desc: "Able to work in teams as well as independently with good coordination to achieve shared goals." },
+      ],
+    },
+    closing: [
+      "Along with this letter, I have enclosed my Curriculum Vitae (CV) and other supporting documents that provide a deeper overview of my qualifications and potential.",
+      "I sincerely hope to be given the opportunity to attend an interview, where I can further explain how my background and abilities can make a real contribution to the advancement of your company.",
+      "Thus I submit this application letter. Thank you for your attention and the opportunity you provide.",
+    ],
+    signoff: "Sincerely,",
+  },
+};
+
+const langs: (keyof typeof coverLetter)[] = ["id", "en"];
 ---
 
 <Layout
@@ -31,204 +77,43 @@ const formattedDateEN = new Intl.DateTimeFormat('en-US', {
     <div
       class="max-w-4xl mx-auto bg-white shadow-xl rounded-sm overflow-hidden min-h-[297mm] p-8"
     >
-      <div id="cover-content" data-lang="id">
-        <div class="px-16 py-20 space-y-8">
-          <div class="flex justify-between">
-            <div class="text-slate-800 font-medium text-sm">
-              <p>Kepada Yth.</p>
-              <p>Bapak/Ibu HRD / Pimpinan Perusahaan</p>
-              <p>Di Tempat</p>
-            </div>
-            <div class="text-right text-slate-600 text-sm mb-8">
-              Cirebon, {formattedDateID}
-            </div>
-          </div>
+      {langs.map((lang) => {
+        const c = coverLetter[lang];
+        return (
+          <div id="cover-content" data-lang={lang} hidden={lang !== "id"}>
+            <div class="px-16 py-20 space-y-8">
+              <div class="flex justify-between">
+                <div class="text-slate-800 font-medium text-sm">
+                  {c.recipient.map((line) => <p>{line}</p>)}
+                </div>
+                <div class="text-right text-slate-600 text-sm mb-8">{c.date}</div>
+              </div>
 
-          <div
-            class="text-slate-700 leading-relaxed text-sm space-y-5 text-justify"
-          >
-            <p>Dengan hormat,</p>
+              <div class="text-slate-700 leading-relaxed text-sm space-y-5 text-justify">
+                <p>{c.greeting}</p>
+                {c.body.map((p) => <p>{p}</p>)}
+                <div class="space-y-4">
+                  <p>{c.qualifications.intro}</p>
+                  <ul class="list-decimal pl-5 space-y-2">
+                    {c.qualifications.items.map((item) => (
+                      <li><strong>{item.title}:</strong> {item.desc}</li>
+                    ))}
+                  </ul>
+                </div>
+                {c.closing.map((p) => <p>{p}</p>)}
+              </div>
 
-            <p>
-              Melalui surat ini, saya bermaksud untuk mengajukan diri guna
-              bergabung dan berkontribusi di perusahaan yang Bapak/Ibu pimpin.
-              Saya memiliki ketertarikan yang besar untuk membawa nilai tambah
-              serta berkembang bersama tim profesional di perusahaan Bapak/Ibu.
-            </p>
-
-            <p>
-              Saya adalah pribadi yang berorientasi pada hasil dengan kombinasi
-              kemampuan teknis, analitis, dan manajerial yang solid. Saya memiliki
-              rekam jejak dalam mengelola tanggung jawab secara mandiri maupun
-              kolaboratif yang telah memberikan dampak nyata. Pengalaman saya
-              dalam menghadapi tantangan kompleks, melakukan analisis masalah,
-              serta mencari solusi yang efisien telah membentuk saya menjadi
-              individu yang disiplin, detail, dan berkomitmen tinggi terhadap
-              kualitas hasil kerja.
-            </p>
-
-            <p>
-              Selain itu, saya memiliki kemampuan adaptasi yang tinggi terhadap
-              lingkungan baru dan cepat dalam menguasai sistem maupun prosedur
-              kerja yang diterapkan perusahaan. Saya juga fasih berkomunikasi
-              dalam bahasa Indonesia dan Inggris tingkat profesional, yang
-              memungkinkan saya untuk berinteraksi secara efektif dengan berbagai
-              pihak di berbagai level organisasi.
-            </p>
-
-            <div class="space-y-4">
-              <p>
-                Sebagai bahan pertimbangan Bapak/Ibu, berikut adalah kualifikasi
-                utama yang saya miliki:
-              </p>
-              <ul class="list-decimal pl-5 space-y-2">
-                <li>
-                  <strong>Orientasi pada Hasil & Kualitas:</strong> Terbiasa bekerja
-                  dengan target dan memastikan setiap tanggung jawab diselesaikan dengan
-                  standar kualitas terbaik.
-                </li>
-                <li>
-                  <strong>Kemampuan Analitis & Problem Solving:</strong> Mampu menganalisis
-                  situasi kompleks untuk menemukan solusi yang paling efektif dan efisien.
-                </li>
-                <li>
-                  <strong>Adaptabilitas & Pembelajaran Cepat:</strong> Kemampuan belajar
-                  yang tinggi terhadap teknologi, perangkat lunak, maupun alur kerja
-                  baru guna mendukung efektivitas operasional.
-                </li>
-                <li>
-                  <strong>Komunikasi & Kolaborasi:</strong> Mampu bekerja sama dalam
-                  tim maupun secara mandiri dengan koordinasi yang baik untuk mencapai
-                  tujuan bersama.
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Bersama surat ini, saya lampirkan Daftar Riwayat Hidup (CV) serta
-              dokumen pendukung lainnya yang memberikan gambaran lebih mendalam
-              mengenai kualifikasi dan potensi yang saya miliki.
-            </p>
-
-            <p>
-              Besar harapan saya untuk diberikan kesempatan menghadiri sesi
-              wawancara, agar saya dapat menjelaskan lebih lanjut mengenai
-              bagaimana latar belakang dan kemampuan saya dapat memberikan
-              kontribusi nyata bagi kemajuan perusahaan Bapak/Ibu.
-            </p>
-
-            <p>
-              Demikian surat lamaran ini saya sampaikan. Atas perhatian dan
-              kesempatan yang Bapak/Ibu berikan, saya ucapkan terima kasih.
-            </p>
-          </div>
-
-          <div class="pt-12 flex justify-between items-center">
-            <span></span>
-            <div class="text-center text-slate-800 text-sm flex flex-col gap-16">
-              <p>Hormat saya,</p>
-              <p class="font-bold">{name}</p>
+              <div class="pt-12 flex justify-between items-center">
+                <span></span>
+                <div class="text-center text-slate-800 text-sm flex flex-col gap-16">
+                  <p>{c.signoff}</p>
+                  <p class="font-bold">{name}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div id="cover-content" data-lang="en" hidden>
-        <div class="px-16 py-20 space-y-8">
-          <div class="flex justify-between">
-            <div class="text-slate-800 font-medium text-sm">
-              <p>To whom it may concern,</p>
-              <p>HRD Manager / Company Director</p>
-            </div>
-            <div class="text-right text-slate-600 text-sm mb-8">
-              Cirebon, {formattedDateEN}
-            </div>
-          </div>
-
-          <div
-            class="text-slate-700 leading-relaxed text-sm space-y-5 text-justify"
-          >
-            <p>Dear Sir/Madam,</p>
-
-            <p>
-              Through this letter, I intend to submit my application to join
-              and contribute to the company you lead. I have a strong interest
-              in bringing added value and growing together with the professional
-              team at your company.
-            </p>
-
-            <p>
-              I am a results-oriented individual with a solid combination of
-              technical, analytical, and managerial skills. I have a proven
-              track record of managing responsibilities both independently and
-              collaboratively, delivering tangible impact. My experience in
-              handling complex challenges, conducting problem analysis, and
-              finding efficient solutions has shaped me into a disciplined,
-              detail-oriented person with a high commitment to quality output.
-            </p>
-
-            <p>
-              Furthermore, I have a high adaptability to new environments and
-              can quickly master systems and work procedures implemented by
-              the company. I am fluent in both Indonesian and English at a
-              professional level, enabling me to communicate effectively with
-              various parties across different organizational levels.
-            </p>
-
-            <div class="space-y-4">
-              <p>
-                For your consideration, here are my key qualifications:
-              </p>
-              <ul class="list-decimal pl-5 space-y-2">
-                <li>
-                  <strong>Results & Quality Orientation:</strong> Accustomed to working
-                  with targets and ensuring every responsibility is completed to the
-                  highest quality standards.
-                </li>
-                <li>
-                  <strong>Analytical & Problem-Solving Skills:</strong> Able to analyze
-                  complex situations to find the most effective and efficient solutions.
-                </li>
-                <li>
-                  <strong>Adaptability & Fast Learning:</strong> High learning ability
-                  for new technologies, software, and workflows to support operational
-                  effectiveness.
-                </li>
-                <li>
-                  <strong>Communication & Collaboration:</strong> Able to work in teams
-                  as well as independently with good coordination to achieve shared goals.
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Along with this letter, I have enclosed my Curriculum Vitae (CV)
-              and other supporting documents that provide a deeper overview of
-              my qualifications and potential.
-            </p>
-
-            <p>
-              I sincerely hope to be given the opportunity to attend an
-              interview, where I can further explain how my background and
-              abilities can make a real contribution to the advancement of
-              your company.
-            </p>
-
-            <p>
-              Thus I submit this application letter. Thank you for your
-              attention and the opportunity you provide.
-            </p>
-          </div>
-
-          <div class="pt-12 flex justify-between items-center">
-            <span></span>
-            <div class="text-center text-slate-800 text-sm flex flex-col gap-16">
-              <p>Sincerely,</p>
-              <p class="font-bold">{name}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
 
     <div class="flex items-center justify-center gap-4 print:hidden">
@@ -256,12 +141,12 @@ const formattedDateEN = new Intl.DateTimeFormat('en-US', {
     return localStorage.getItem(LANG_KEY) || "id";
   }
 
-  function setLang(lang) {
+  function setLang(lang: string) {
     localStorage.setItem(LANG_KEY, lang);
-    document.querySelectorAll("#cover-content").forEach((el) => {
+    document.querySelectorAll<HTMLElement>("#cover-content").forEach((el) => {
       el.hidden = el.dataset.lang !== lang;
     });
-    document.getElementById("lang-label").textContent = lang === "id" ? "EN" : "ID";
+    document.getElementById("lang-label")!.textContent = lang === "id" ? "EN" : "ID";
   }
 
   document.getElementById("lang-toggle")?.addEventListener("click", () => {
