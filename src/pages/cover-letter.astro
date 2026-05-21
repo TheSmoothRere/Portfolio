@@ -8,12 +8,24 @@ const name = "Raehan Damai Putra";
 const title = "Cover Letter";
 
 const today = new Date();
-const dateID = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }).format(today);
-const dateEN = new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', year: 'numeric' }).format(today);
+const dateID = new Intl.DateTimeFormat("id-ID", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(today);
+const dateEN = new Intl.DateTimeFormat("en-US", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(today);
 
 const coverLetter = {
   id: {
-    recipient: ["Kepada Yth.", "Bapak/Ibu HRD / Pimpinan Perusahaan", "Di Tempat"],
+    recipient: [
+      "Kepada Yth.",
+      "Bapak/Ibu HRD / Pimpinan Perusahaan",
+      "Di Tempat",
+    ],
     date: `Cirebon, ${dateID}`,
     greeting: "Dengan hormat,",
     body: [
@@ -22,12 +34,25 @@ const coverLetter = {
       "Selain itu, saya memiliki kemampuan adaptasi yang tinggi terhadap lingkungan baru dan cepat dalam menguasai sistem maupun prosedur kerja yang diterapkan perusahaan. Saya juga fasih berkomunikasi dalam bahasa Indonesia dan Inggris tingkat profesional, yang memungkinkan saya untuk berinteraksi secara efektif dengan berbagai pihak di berbagai level organisasi.",
     ],
     qualifications: {
-      intro: "Sebagai bahan pertimbangan Bapak/Ibu, berikut adalah kualifikasi utama yang saya miliki:",
+      intro:
+        "Sebagai bahan pertimbangan Bapak/Ibu, berikut adalah kualifikasi utama yang saya miliki:",
       items: [
-        { title: "Orientasi pada Hasil & Kualitas", desc: "Terbiasa bekerja dengan target dan memastikan setiap tanggung jawab diselesaikan dengan standar kualitas terbaik." },
-        { title: "Kemampuan Analitis & Problem Solving", desc: "Mampu menganalisis situasi kompleks untuk menemukan solusi yang paling efektif dan efisien." },
-        { title: "Adaptabilitas & Pembelajaran Cepat", desc: "Kemampuan belajar yang tinggi terhadap teknologi, perangkat lunak, maupun alur kerja baru guna mendukung efektivitas operasional." },
-        { title: "Komunikasi & Kolaborasi", desc: "Mampu bekerja sama dalam tim maupun secara mandiri dengan koordinasi yang baik untuk mencapai tujuan bersama." },
+        {
+          title: "Orientasi pada Hasil & Kualitas",
+          desc: "Terbiasa bekerja dengan target dan memastikan setiap tanggung jawab diselesaikan dengan standar kualitas terbaik.",
+        },
+        {
+          title: "Kemampuan Analitis & Problem Solving",
+          desc: "Mampu menganalisis situasi kompleks untuk menemukan solusi yang paling efektif dan efisien.",
+        },
+        {
+          title: "Adaptabilitas & Pembelajaran Cepat",
+          desc: "Kemampuan belajar yang tinggi terhadap teknologi, perangkat lunak, maupun alur kerja baru guna mendukung efektivitas operasional.",
+        },
+        {
+          title: "Komunikasi & Kolaborasi",
+          desc: "Mampu bekerja sama dalam tim maupun secara mandiri dengan koordinasi yang baik untuk mencapai tujuan bersama.",
+        },
       ],
     },
     closing: [
@@ -49,10 +74,22 @@ const coverLetter = {
     qualifications: {
       intro: "For your consideration, here are my key qualifications:",
       items: [
-        { title: "Results & Quality Orientation", desc: "Accustomed to working with targets and ensuring every responsibility is completed to the highest quality standards." },
-        { title: "Analytical & Problem-Solving Skills", desc: "Able to analyze complex situations to find the most effective and efficient solutions." },
-        { title: "Adaptability & Fast Learning", desc: "High learning ability for new technologies, software, and workflows to support operational effectiveness." },
-        { title: "Communication & Collaboration", desc: "Able to work in teams as well as independently with good coordination to achieve shared goals." },
+        {
+          title: "Results & Quality Orientation",
+          desc: "Accustomed to working with targets and ensuring every responsibility is completed to the highest quality standards.",
+        },
+        {
+          title: "Analytical & Problem-Solving Skills",
+          desc: "Able to analyze complex situations to find the most effective and efficient solutions.",
+        },
+        {
+          title: "Adaptability & Fast Learning",
+          desc: "High learning ability for new technologies, software, and workflows to support operational effectiveness.",
+        },
+        {
+          title: "Communication & Collaboration",
+          desc: "Able to work in teams as well as independently with good coordination to achieve shared goals.",
+        },
       ],
     },
     closing: [
@@ -77,43 +114,55 @@ const langs: (keyof typeof coverLetter)[] = ["id", "en"];
     <div
       class="max-w-4xl mx-auto bg-white shadow-xl rounded-sm overflow-hidden min-h-[297mm] p-8"
     >
-      {langs.map((lang) => {
-        const c = coverLetter[lang];
-        return (
-          <div id="cover-content" data-lang={lang} hidden={lang !== "id"}>
-            <div class="px-16 py-20 space-y-8">
-              <div class="flex justify-between">
-                <div class="text-slate-800 font-medium text-sm">
-                  {c.recipient.map((line) => <p>{line}</p>)}
-                </div>
-                <div class="text-right text-slate-600 text-sm mb-8">{c.date}</div>
-              </div>
-
-              <div class="text-slate-700 leading-relaxed text-sm space-y-5 text-justify">
-                <p>{c.greeting}</p>
-                {c.body.map((p) => <p>{p}</p>)}
-                <div class="space-y-4">
-                  <p>{c.qualifications.intro}</p>
-                  <ul class="list-decimal pl-5 space-y-2">
-                    {c.qualifications.items.map((item) => (
-                      <li><strong>{item.title}:</strong> {item.desc}</li>
+      {
+        langs.map((lang) => {
+          const c = coverLetter[lang];
+          return (
+            <div id="cover-content" data-lang={lang} hidden={lang !== "id"}>
+              <div class="px-16 py-20 space-y-8">
+                <div class="flex justify-between">
+                  <div class="text-slate-800 font-medium text-sm">
+                    {c.recipient.map((line) => (
+                      <p>{line}</p>
                     ))}
-                  </ul>
+                  </div>
+                  <div class="text-right text-slate-600 text-sm mb-8 date-display" data-lang={lang}>
+                    {c.date}
+                  </div>
                 </div>
-                {c.closing.map((p) => <p>{p}</p>)}
-              </div>
 
-              <div class="pt-12 flex justify-between items-center">
-                <span></span>
-                <div class="text-center text-slate-800 text-sm flex flex-col gap-16">
-                  <p>{c.signoff}</p>
-                  <p class="font-bold">{name}</p>
+                <div class="text-slate-700 leading-relaxed text-sm space-y-5 text-justify">
+                  <p>{c.greeting}</p>
+                  {c.body.map((p) => (
+                    <p>{p}</p>
+                  ))}
+                  <div class="space-y-4">
+                    <p>{c.qualifications.intro}</p>
+                    <ul class="list-decimal pl-5 space-y-2">
+                      {c.qualifications.items.map((item) => (
+                        <li>
+                          <strong>{item.title}:</strong> {item.desc}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {c.closing.map((p) => (
+                    <p>{p}</p>
+                  ))}
+                </div>
+
+                <div class="pt-12 flex justify-between items-center">
+                  <span />
+                  <div class="text-center text-slate-800 text-sm flex flex-col gap-16">
+                    <p>{c.signoff}</p>
+                    <p class="font-bold">{name}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })
+      }
     </div>
 
     <div class="flex items-center justify-center gap-4 print:hidden">
@@ -137,6 +186,26 @@ const langs: (keyof typeof coverLetter)[] = ["id", "en"];
 <script>
   const LANG_KEY = "cover-letter-lang";
 
+  const today = new Date();
+  const dateID = new Intl.DateTimeFormat("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(today);
+  const dateEN = new Intl.DateTimeFormat("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(today);
+
+  document.querySelectorAll<HTMLElement>('.date-display').forEach((el) => {
+    if (el.dataset.lang === 'id') {
+      el.textContent = `Cirebon, ${dateID}`;
+    } else if (el.dataset.lang === 'en') {
+      el.textContent = `Cirebon, ${dateEN}`;
+    }
+  });
+
   function getPreferredLang() {
     return localStorage.getItem(LANG_KEY) || "id";
   }
@@ -146,7 +215,8 @@ const langs: (keyof typeof coverLetter)[] = ["id", "en"];
     document.querySelectorAll<HTMLElement>("#cover-content").forEach((el) => {
       el.hidden = el.dataset.lang !== lang;
     });
-    document.getElementById("lang-label")!.textContent = lang === "id" ? "EN" : "ID";
+    document.getElementById("lang-label")!.textContent =
+      lang === "id" ? "EN" : "ID";
   }
 
   document.getElementById("lang-toggle")?.addEventListener("click", () => {
